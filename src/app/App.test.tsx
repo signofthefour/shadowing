@@ -1,5 +1,5 @@
 import { forwardRef, useImperativeHandle } from 'react'
-import { render, screen } from '@testing-library/react'
+import { act, fireEvent, render, screen } from '@testing-library/react'
 import userEvent from '@testing-library/user-event'
 import { describe, expect, it, vi } from 'vitest'
 import { App } from './App'
@@ -51,6 +51,85 @@ describe('Quit & Erase', () => {
 })
 
 describe('guided practice loop', () => {
+  it('serializes pending Next saves so duplicate clicks advance only once', async () => {
+    let resolveSave!: () => void
+    const pendingSave = new Promise<void>((resolve) => { resolveSave = resolve })
+    const saveProgress = vi.fn(() => pendingSave)
+    const store: SessionStore = {
+      async load() {
+        return {
+          session: {
+            speechId: 'steve-jobs-stanford-2005',
+            activeLineId: 'line-143',
+            completedLineIds: [],
+            updatedAt: '2026-09-21T00:00:00.000Z',
+          },
+          takes: [],
+        }
+      },
+      saveProgress,
+      async replaceTake() {},
+      async discard() {},
+    }
+    render(<App store={store} />)
+
+    await screen.findByText(`Line 143 of ${STANFORD_SPEECH.lines.length}`)
+    const next = screen.getByRole('button', { name: /^next$/i })
+    fireEvent.click(next)
+    fireEvent.click(next)
+
+    expect(saveProgress).toHaveBeenCalledOnce()
+    expect(next).toBeDisabled()
+
+    await act(async () => resolveSave())
+
+    expect(await screen.findByText(`Line 144 of ${STANFORD_SPEECH.lines.length}`)).toBeInTheDocument()
+    expect(screen.queryByRole('region', { name: /practice complete/i })).not.toBeInTheDocument()
+  })
+
+  it('keeps an incomplete final line open with missing transcript lines selectable', async () => {
+    const user = userEvent.setup()
+    const saveProgress = vi.fn()
+    const store: SessionStore = {
+      async load() {
+        return {
+          session: {
+            speechId: 'steve-jobs-stanford-2005',
+            activeLineId: 'line-144',
+            completedLineIds: [],
+            updatedAt: '2026-09-21T00:00:00.000Z',
+          },
+          takes: [],
+        }
+      },
+      saveProgress,
+      async replaceTake() {},
+      async discard() {},
+    }
+    render(<App store={store} />)
+
+    await screen.findByText(`Line 144 of ${STANFORD_SPEECH.lines.length}`)
+    await user.click(screen.getByRole('button', { name: /^next$/i }))
+
+    expect(await screen.findByRole('alert')).toHaveTextContent('Some lines are still unrecorded')
+    expect(screen.getByText(`Line 144 of ${STANFORD_SPEECH.lines.length}`)).toBeInTheDocument()
+    expect(screen.getByRole('button', { name: STANFORD_SPEECH.lines[0].text })).toBeEnabled()
+    expect(saveProgress).not.toHaveBeenCalled()
+  })
+
+  it('advances to the next line without requiring a recording', async () => {
+    const user = userEvent.setup()
+    render(<App store={createRestoredStore()} />)
+
+    await screen.findByText(`Line 2 of ${STANFORD_SPEECH.lines.length}`)
+    const next = screen.getByRole('button', { name: /^next$/i })
+    expect(next).toBeEnabled()
+
+    await user.click(next)
+
+    expect(await screen.findByText(`Line 3 of ${STANFORD_SPEECH.lines.length}`)).toBeInTheDocument()
+  })
+
   it('plays one line, records a take, and enables Next', async () => {
     const user = userEvent.setup()
     const store = createRestoredStore()

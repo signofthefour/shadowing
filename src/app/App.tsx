@@ -61,6 +61,7 @@ export function App({
   const [playerAttempt, setPlayerAttempt] = useState(0)
   const playerRef = useRef<YouTubePlayerHandle>(null)
   const recorderRef = useRef<AudioRecorderPort | null>(null)
+  const positionSaveRef = useRef(false)
   const previewRef = useRef<HTMLAudioElement | null>(null)
   const previewUrlRef = useRef<string | null>(null)
   const showError = useCallback((message: string) => {
@@ -170,32 +171,39 @@ export function App({
   }
 
   async function advance() {
-    if (!takes.has(activeLine.id)) return
-    if (state.activeIndex === STANFORD_SPEECH.lines.length - 1) {
-      const missing = STANFORD_SPEECH.lines.find((line) => !takes.has(line.id))
-      if (missing) {
-        showError('Some lines are still unrecorded. Select a missing line to finish the speech.')
-        return
-      }
-    }
-    const nextIndex = Math.min(state.activeIndex + 1, STANFORD_SPEECH.lines.length - 1)
+    if (busy || positionSaveRef.current) return
+    positionSaveRef.current = true
+    setBusy(true)
     try {
+      if (state.activeIndex === STANFORD_SPEECH.lines.length - 1) {
+        const missing = STANFORD_SPEECH.lines.find((line) => !takes.has(line.id))
+        if (missing) {
+          showError('Some lines are still unrecorded. Select a missing line to finish the speech.')
+          return
+        }
+      }
+      const nextIndex = Math.min(state.activeIndex + 1, STANFORD_SPEECH.lines.length - 1)
       await store.saveProgress({
-      speechId: STANFORD_SPEECH.id,
-      activeLineId: STANFORD_SPEECH.lines[nextIndex].id,
-      completedLineIds: Array.from(takes.keys()),
-      updatedAt: new Date().toISOString(),
+        speechId: STANFORD_SPEECH.id,
+        activeLineId: STANFORD_SPEECH.lines[nextIndex].id,
+        completedLineIds: Array.from(takes.keys()),
+        updatedAt: new Date().toISOString(),
       })
       dispatch({ type: 'NEXT' })
     } catch {
       showError('Progress could not be saved. Free browser storage and try again.')
+    } finally {
+      positionSaveRef.current = false
+      setBusy(false)
     }
   }
 
   async function selectLine(lineId: string) {
-    if (busy || state.phase === 'recording') return
+    if (busy || positionSaveRef.current || state.phase === 'recording') return
     const index = STANFORD_SPEECH.lines.findIndex((line) => line.id === lineId)
     if (index < 0) return
+    positionSaveRef.current = true
+    setBusy(true)
     try {
       await store.saveProgress({
         speechId: STANFORD_SPEECH.id,
@@ -203,12 +211,14 @@ export function App({
         completedLineIds: Array.from(takes.keys()),
         updatedAt: new Date().toISOString(),
       })
+      playerRef.current?.cue(STANFORD_SPEECH.lines[index].startSeconds)
+      dispatch({ type: 'SELECT_LINE', index, hasTake: takes.has(lineId) })
     } catch {
       showError('Position could not be saved. Free browser storage and try again.')
-      return
+    } finally {
+      positionSaveRef.current = false
+      setBusy(false)
     }
-    playerRef.current?.cue(STANFORD_SPEECH.lines[index].startSeconds)
-    dispatch({ type: 'SELECT_LINE', index, hasTake: takes.has(lineId) })
   }
 
   async function quitAndErase() {
@@ -306,7 +316,7 @@ export function App({
             )}
             <button type="button" className="control-button" onClick={listenToTake} disabled={!takes.has(activeLine.id) || busy}>Listen</button>
             <button type="button" className="control-button" onClick={() => dispatch({ type: 'REDO' })} disabled={!takes.has(activeLine.id) || state.phase === 'recording' || busy}>Redo</button>
-            <button aria-label="Next" type="button" className="next-button" onClick={advance} disabled={state.phase !== 'recorded' || busy}>Next →</button>
+            <button aria-label="Next" type="button" className="next-button" onClick={advance} disabled={!['ready', 'ready-to-record', 'recorded'].includes(state.phase) || busy}>Next →</button>
           </div>
         </section>
       )}

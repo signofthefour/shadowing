@@ -207,6 +207,20 @@ test('shows the Stanford practice screen and erases only after confirmation', as
   await expect(page.getByText('Line 1 of 144')).toBeVisible()
 })
 
+test('advances without recording and restores the skipped position', async ({ page }) => {
+  await page.goto('/')
+
+  const next = page.getByRole('button', { name: 'Next', exact: true })
+  await expect(next).toBeEnabled()
+  await next.click()
+  await expect(page.getByText('Line 2 of 144')).toBeVisible()
+
+  await page.reload()
+
+  await expect(page.getByText('Line 2 of 144')).toBeVisible()
+  await expect(page.getByRole('button', { name: 'Listen', exact: true })).toBeDisabled()
+})
+
 test('restores the recorded take and next line after refresh', async ({ page }) => {
   await page.goto('/')
 

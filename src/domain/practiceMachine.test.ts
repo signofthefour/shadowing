@@ -26,8 +26,21 @@ describe('practice state transitions', () => {
     expect(saved.hasTake).toBe(true)
   })
 
-  it('does not advance without a saved take', () => {
-    expect(transition(initial, { type: 'NEXT' })).toEqual(initial)
+  it('advances from a ready line without a saved take', () => {
+    expect(transition(initial, { type: 'NEXT' })).toEqual({
+      ...initial,
+      activeIndex: 1,
+    })
+  })
+
+  it('advances without a take after source playback finishes', () => {
+    const waiting = transition(transition(initial, { type: 'HEAR_SOURCE' }), { type: 'SOURCE_FINISHED' })
+    expect(transition(waiting, { type: 'NEXT' }).activeIndex).toBe(1)
+  })
+
+  it('does not advance while source playback or recording is active', () => {
+    expect(transition({ ...initial, phase: 'playing-source' }, { type: 'NEXT' }).activeIndex).toBe(0)
+    expect(transition({ ...initial, phase: 'recording' }, { type: 'NEXT' }).activeIndex).toBe(0)
   })
 
   it('completes after advancing from the final saved take', () => {
@@ -39,6 +52,15 @@ describe('practice state transitions', () => {
     }
 
     expect(transition(final, { type: 'NEXT' }).phase).toBe('completed')
+  })
+
+  it('does not complete from an unrecorded final line', () => {
+    const final: PracticeState = {
+      ...initial,
+      activeIndex: 1,
+    }
+
+    expect(transition(final, { type: 'NEXT' })).toEqual(final)
   })
 
   it('keeps an existing take when a redo recording fails', () => {

@@ -40,9 +40,11 @@ export function transition(
         ? { ...state, phase: 'ready-to-record', error: null }
         : state
     case 'NEXT':
-      if (!state.hasTake || state.phase !== 'recorded') return state
+      if (!['ready', 'ready-to-record', 'recorded'].includes(state.phase)) return state
       if (state.activeIndex === state.lineCount - 1) {
-        return { ...state, phase: 'completed', error: null }
+        return state.hasTake && state.phase === 'recorded'
+          ? { ...state, phase: 'completed', error: null }
+          : state
       }
       return {
         ...state,

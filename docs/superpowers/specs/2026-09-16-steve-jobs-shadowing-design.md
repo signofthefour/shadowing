@@ -30,7 +30,7 @@ Desktop uses a two-column practice area:
 
 Mobile uses the same controls but stacks the video above the transcript. Controls must remain reachable without covering the active transcript sentence.
 
-The interface should be calm and focused. Only actions valid for the current practice state are enabled. In particular, Record becomes available after the source sentence finishes, Listen and Redo require an existing recording, and Next requires a saved recording.
+The interface should be calm and focused. Only actions valid for the current practice state are enabled. In particular, Record becomes available after the source sentence finishes, Listen and Redo require an existing recording, and Next may skip an unrecorded sentence. Completing the session and exporting an MP3 still require a saved recording for every sentence.
 
 ## Components and Responsibilities
 

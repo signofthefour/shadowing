@@ -12,11 +12,12 @@
 - Browser-level coverage now exercises record/restore/listen, failed replacement preservation, video retry, successful MP3 download, and retry after MP3 failure on desktop and mobile.
 - Storage-full failures show an actionable message and retain the previous take. Only video failures display the **Retry video** action.
 - The YouTube IFrame API now receives the exact host-page origin for secure `postMessage` communication.
+- **Next** can advance and persist position without a recording; full completion and MP3 export still require all 144 takes.
 
 ## Latest verification
 
-- `npm test`: 19 tests passed (8 files).
-- `npm run test:e2e`: 14 Chromium tests passed (7 scenarios on desktop and mobile).
+- `npm test`: 25 tests passed (8 files).
+- `npm run test:e2e`: 16 Chromium tests passed (8 scenarios on desktop and mobile).
 - `npm run build`: passed.
 
 These checks prove the implemented paths they exercise; they do **not** prove precise sentence-end timing, a real-microphone session, audible recording quality, or audible full-speech MP3 quality.
