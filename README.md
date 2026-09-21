@@ -22,6 +22,19 @@ npm run dev -- --host 127.0.0.1
 
 Open [http://127.0.0.1:5173](http://127.0.0.1:5173).
 
+## GitHub Pages
+
+The public site is deployed to [https://signofthefour.github.io/shadowing/](https://signofthefour.github.io/shadowing/) by `.github/workflows/deploy-pages.yml` whenever `main` is pushed. The workflow runs the unit tests, builds with the `/shadowing/` base path, and publishes the `dist` artifact through GitHub Pages.
+
+To run the same production build locally:
+
+```bash
+npm run build -- --mode pages
+npx vite preview --host 127.0.0.1
+```
+
+Open the `/shadowing/` URL printed by Vite. In the repository's **Settings → Pages**, the source must be **GitHub Actions**.
+
 ## Practice flow
 
 1. Select **Hear Steve** to play the active sentence.
@@ -39,6 +52,7 @@ npm run dev       # Start the development server
 npm test          # Run unit and component tests
 npm run test:e2e  # Run desktop and mobile Playwright tests (Chromium required)
 npm run build     # Type-check and create a production build
+npm run build -- --mode pages  # Build with the GitHub Pages base path
 ```
 
 ## YouTube troubleshooting

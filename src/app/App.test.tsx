@@ -51,6 +51,16 @@ describe('Quit & Erase', () => {
 })
 
 describe('guided practice loop', () => {
+  it('links home to the configured deployment base path', async () => {
+    render(<App store={createRestoredStore()} />)
+
+    await screen.findByText(`Line 2 of ${STANFORD_SPEECH.lines.length}`)
+    expect(screen.getByRole('link', { name: 'Speak Along home' })).toHaveAttribute(
+      'href',
+      import.meta.env.BASE_URL,
+    )
+  })
+
   it('serializes pending Next saves so duplicate clicks advance only once', async () => {
     let resolveSave!: () => void
     const pendingSave = new Promise<void>((resolve) => { resolveSave = resolve })

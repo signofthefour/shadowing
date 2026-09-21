@@ -266,7 +266,7 @@ export function App({
   return (
     <div className="app-shell">
       <header className="topbar">
-        <a className="brand" href="/" aria-label="Speak Along home">Speak Along</a>
+        <a className="brand" href={import.meta.env.BASE_URL} aria-label="Speak Along home">Speak Along</a>
         <div className="session-meta">
           <span>{takes.size} recorded</span>
           <button className="quiet-button" type="button" onClick={quitAndErase} disabled={busy}>
