@@ -1,0 +1,1010 @@
+[
+  {
+    "id": "line-001",
+    "sequence": 0,
+    "text": "I am honored to be with you today at your commencement from one of the finest universities in the world.",
+    "startSeconds": 26.413,
+    "endSeconds": 38.346
+  },
+  {
+    "id": "line-002",
+    "sequence": 1,
+    "text": "I never graduated from college.",
+    "startSeconds": 38.346,
+    "endSeconds": 40.649
+  },
+  {
+    "id": "line-003",
+    "sequence": 2,
+    "text": "Truth be told, this is the closest I've ever gotten to a college graduation.",
+    "startSeconds": 40.649,
+    "endSeconds": 47.269
+  },
+  {
+    "id": "line-004",
+    "sequence": 3,
+    "text": "Today I want to tell you three stories from my life.",
+    "startSeconds": 47.269,
+    "endSeconds": 51.059
+  },
+  {
+    "id": "line-005",
+    "sequence": 4,
+    "text": "That's it.",
+    "startSeconds": 51.059,
+    "endSeconds": 51.739
+  },
+  {
+    "id": "line-006",
+    "sequence": 5,
+    "text": "No big deal.",
+    "startSeconds": 51.739,
+    "endSeconds": 53.419
+  },
+  {
+    "id": "line-007",
+    "sequence": 6,
+    "text": "Just three stories.",
+    "startSeconds": 53.419,
+    "endSeconds": 55.26
+  },
+  {
+    "id": "line-008",
+    "sequence": 7,
+    "text": "The first story is about connecting the dots.",
+    "startSeconds": 55.26,
+    "endSeconds": 60.76
+  },
+  {
+    "id": "line-009",
+    "sequence": 8,
+    "text": "I dropped out of Reed College after the first 6 months, but then stayed around as a drop-in for another 18 months or so before I really quit.",
+    "startSeconds": 60.76,
+    "endSeconds": 68.792
+  },
+  {
+    "id": "line-010",
+    "sequence": 9,
+    "text": "So why did I drop out?",
+    "startSeconds": 68.792,
+    "endSeconds": 71.652
+  },
+  {
+    "id": "line-011",
+    "sequence": 10,
+    "text": "It started before I was born.",
+    "startSeconds": 71.652,
+    "endSeconds": 74.588
+  },
+  {
+    "id": "line-012",
+    "sequence": 11,
+    "text": "My biological mother was a young, unwed college graduate student, and she decided to put me up for adoption.",
+    "startSeconds": 74.588,
+    "endSeconds": 81.525
+  },
+  {
+    "id": "line-013",
+    "sequence": 12,
+    "text": "She felt very strongly that I should be adopted by college graduates, so everything was all set for me to be adopted at birth by a lawyer and his wife.",
+    "startSeconds": 81.525,
+    "endSeconds": 91.085
+  },
+  {
+    "id": "line-014",
+    "sequence": 13,
+    "text": "Except that when I popped out they decided at the last minute that they really wanted a girl.",
+    "startSeconds": 91.085,
+    "endSeconds": 96.951
+  },
+  {
+    "id": "line-015",
+    "sequence": 14,
+    "text": "So my parents, who were on a waiting list, got a call in the middle of the night asking: \"We have an unexpected baby boy; do you want him?\"",
+    "startSeconds": 96.951,
+    "endSeconds": 107.959
+  },
+  {
+    "id": "line-016",
+    "sequence": 15,
+    "text": "They said: \"Of course.\"",
+    "startSeconds": 107.959,
+    "endSeconds": 110.192
+  },
+  {
+    "id": "line-017",
+    "sequence": 16,
+    "text": "My biological mother later found out that my mother had never graduated from college and that my father had never graduated from high school.",
+    "startSeconds": 110.192,
+    "endSeconds": 118.733
+  },
+  {
+    "id": "line-018",
+    "sequence": 17,
+    "text": "She refused to sign the final adoption papers.",
+    "startSeconds": 118.733,
+    "endSeconds": 122.554
+  },
+  {
+    "id": "line-019",
+    "sequence": 18,
+    "text": "She only relented a few months later when my parents promised that I would someday go to college.",
+    "startSeconds": 122.554,
+    "endSeconds": 133.124
+  },
+  {
+    "id": "line-020",
+    "sequence": 19,
+    "text": "And 17 years later I did go to college.",
+    "startSeconds": 133.124,
+    "endSeconds": 136.76
+  },
+  {
+    "id": "line-021",
+    "sequence": 20,
+    "text": "But I naively chose a college that was almost as expensive as Stanford, and all of my working-class parents' savings were being spent on my college tuition.",
+    "startSeconds": 136.76,
+    "endSeconds": 146.64
+  },
+  {
+    "id": "line-022",
+    "sequence": 21,
+    "text": "After six months, I couldn't see the value in it.",
+    "startSeconds": 146.64,
+    "endSeconds": 150.599
+  },
+  {
+    "id": "line-023",
+    "sequence": 22,
+    "text": "I had no idea what I wanted to do with my life and no idea how college was going to help me figure it out.",
+    "startSeconds": 150.599,
+    "endSeconds": 156.564
+  },
+  {
+    "id": "line-024",
+    "sequence": 23,
+    "text": "And here I was spending all of the money my parents had saved their entire life.",
+    "startSeconds": 156.564,
+    "endSeconds": 161.773
+  },
+  {
+    "id": "line-025",
+    "sequence": 24,
+    "text": "So I decided to drop out and trust that it would all work out OK.",
+    "startSeconds": 161.773,
+    "endSeconds": 167.031
+  },
+  {
+    "id": "line-026",
+    "sequence": 25,
+    "text": "It was pretty scary at the time, but looking back it was one of the best decisions I ever made.",
+    "startSeconds": 167.031,
+    "endSeconds": 173.32
+  },
+  {
+    "id": "line-027",
+    "sequence": 26,
+    "text": "The minute I dropped out I could stop taking the required classes that didn't interest me, and begin dropping in on the ones that looked interesting.",
+    "startSeconds": 173.32,
+    "endSeconds": 184.079
+  },
+  {
+    "id": "line-028",
+    "sequence": 27,
+    "text": "It wasn't all romantic.",
+    "startSeconds": 184.079,
+    "endSeconds": 186
+  },
+  {
+    "id": "line-029",
+    "sequence": 28,
+    "text": "I didn't have a dorm room, so I slept on the floor in friends' rooms, I returned coke bottles for the 5¢ deposits to buy food with, and I would walk the 7 miles across town every Sunday night to get one good meal a week at the Hare Krishna temple.",
+    "startSeconds": 186,
+    "endSeconds": 201.129
+  },
+  {
+    "id": "line-030",
+    "sequence": 29,
+    "text": "I loved it.",
+    "startSeconds": 201.129,
+    "endSeconds": 202.585
+  },
+  {
+    "id": "line-031",
+    "sequence": 30,
+    "text": "And much of what I stumbled into by following my curiosity and intuition turned out to be priceless later on.",
+    "startSeconds": 202.585,
+    "endSeconds": 209.619
+  },
+  {
+    "id": "line-032",
+    "sequence": 31,
+    "text": "Let me give you one example: Reed College at that time offered perhaps the best calligraphy instruction in the country.",
+    "startSeconds": 209.619,
+    "endSeconds": 218.032
+  },
+  {
+    "id": "line-033",
+    "sequence": 32,
+    "text": "Throughout the campus every poster, every label on every drawer, was beautifully hand calligraphed.",
+    "startSeconds": 218.032,
+    "endSeconds": 224.513
+  },
+  {
+    "id": "line-034",
+    "sequence": 33,
+    "text": "Because I had dropped out and didn't have to take the normal classes, I decided to take a calligraphy class to learn how to do this.",
+    "startSeconds": 224.513,
+    "endSeconds": 232.664
+  },
+  {
+    "id": "line-035",
+    "sequence": 34,
+    "text": "I learned about serif and san serif typefaces, about varying the amount of space between different letter combinations, about what makes great typography great.",
+    "startSeconds": 232.664,
+    "endSeconds": 242.855
+  },
+  {
+    "id": "line-036",
+    "sequence": 35,
+    "text": "It was beautiful, historical, artistically subtle in a way that science can't capture, and I found it fascinating.",
+    "startSeconds": 242.855,
+    "endSeconds": 251.214
+  },
+  {
+    "id": "line-037",
+    "sequence": 36,
+    "text": "None of this had even a hope of any practical application in my life.",
+    "startSeconds": 251.214,
+    "endSeconds": 256.64
+  },
+  {
+    "id": "line-038",
+    "sequence": 37,
+    "text": "But ten years later, when we were designing the first Macintosh computer, it all came back to me.",
+    "startSeconds": 256.64,
+    "endSeconds": 263.186
+  },
+  {
+    "id": "line-039",
+    "sequence": 38,
+    "text": "And we designed it all into the Mac.",
+    "startSeconds": 263.186,
+    "endSeconds": 265.395
+  },
+  {
+    "id": "line-040",
+    "sequence": 39,
+    "text": "It was the first computer with beautiful typography.",
+    "startSeconds": 265.395,
+    "endSeconds": 268.469
+  },
+  {
+    "id": "line-041",
+    "sequence": 40,
+    "text": "If I had never dropped in on that single course in college, the Mac would have never had multiple typefaces or proportionally spaced fonts.",
+    "startSeconds": 268.469,
+    "endSeconds": 277.12
+  },
+  {
+    "id": "line-042",
+    "sequence": 41,
+    "text": "And since Windows just copied the Mac, its likely that no personal computer would have them.",
+    "startSeconds": 277.12,
+    "endSeconds": 288.964
+  },
+  {
+    "id": "line-043",
+    "sequence": 42,
+    "text": "If I had never dropped out, I would have never dropped in on this calligraphy class, and personal computers might not have the wonderful typography that they do.",
+    "startSeconds": 288.964,
+    "endSeconds": 297.845
+  },
+  {
+    "id": "line-044",
+    "sequence": 43,
+    "text": "Of course it was impossible to connect the dots looking forward when I was in college.",
+    "startSeconds": 297.845,
+    "endSeconds": 302.458
+  },
+  {
+    "id": "line-045",
+    "sequence": 44,
+    "text": "But it was very, very clear looking backwards ten years later.",
+    "startSeconds": 302.458,
+    "endSeconds": 307
+  },
+  {
+    "id": "line-046",
+    "sequence": 45,
+    "text": "Again, you can't connect the dots looking forward; you can only connect them looking backwards.",
+    "startSeconds": 307,
+    "endSeconds": 311.811
+  },
+  {
+    "id": "line-047",
+    "sequence": 46,
+    "text": "So you have to trust that the dots will somehow connect in your future.",
+    "startSeconds": 311.811,
+    "endSeconds": 315.863
+  },
+  {
+    "id": "line-048",
+    "sequence": 47,
+    "text": "You have to trust in something — your gut, destiny, life, karma, whatever.",
+    "startSeconds": 315.863,
+    "endSeconds": 321.32
+  },
+  {
+    "id": "line-049",
+    "sequence": 48,
+    "text": "This approach has never let me down, and it has made all the difference in my life.",
+    "startSeconds": 321.32,
+    "endSeconds": 337.856
+  },
+  {
+    "id": "line-050",
+    "sequence": 49,
+    "text": "My second story is about love and loss.",
+    "startSeconds": 337.856,
+    "endSeconds": 343.02
+  },
+  {
+    "id": "line-051",
+    "sequence": 50,
+    "text": "I was lucky — I found what I loved to do early in life.",
+    "startSeconds": 343.02,
+    "endSeconds": 347.449
+  },
+  {
+    "id": "line-052",
+    "sequence": 51,
+    "text": "Woz and I started Apple in my parents garage when I was 20.",
+    "startSeconds": 347.449,
+    "endSeconds": 351.364
+  },
+  {
+    "id": "line-053",
+    "sequence": 52,
+    "text": "We worked hard, and in 10 years Apple had grown from just the two of us in a garage into a $2 billion company with over 4000 employees.",
+    "startSeconds": 351.364,
+    "endSeconds": 359.18
+  },
+  {
+    "id": "line-054",
+    "sequence": 53,
+    "text": "We had just released our finest creation — the Macintosh — a year earlier, and I had just turned 30.",
+    "startSeconds": 359.18,
+    "endSeconds": 365.544
+  },
+  {
+    "id": "line-055",
+    "sequence": 54,
+    "text": "And then I got fired.",
+    "startSeconds": 365.544,
+    "endSeconds": 367.995
+  },
+  {
+    "id": "line-056",
+    "sequence": 55,
+    "text": "How can you get fired from a company you started?",
+    "startSeconds": 367.995,
+    "endSeconds": 371.657
+  },
+  {
+    "id": "line-057",
+    "sequence": 56,
+    "text": "Well, as Apple grew we hired someone who I thought was very talented to run the company with me, and for the first year or so things went well.",
+    "startSeconds": 371.657,
+    "endSeconds": 380.565
+  },
+  {
+    "id": "line-058",
+    "sequence": 57,
+    "text": "But then our visions of the future began to diverge and eventually we had a falling out.",
+    "startSeconds": 380.565,
+    "endSeconds": 384.78
+  },
+  {
+    "id": "line-059",
+    "sequence": 58,
+    "text": "When we did, our Board of Directors sided with him.",
+    "startSeconds": 384.78,
+    "endSeconds": 388.632
+  },
+  {
+    "id": "line-060",
+    "sequence": 59,
+    "text": "So at 30 I was out.",
+    "startSeconds": 388.632,
+    "endSeconds": 390.84
+  },
+  {
+    "id": "line-061",
+    "sequence": 60,
+    "text": "And very publicly out.",
+    "startSeconds": 390.84,
+    "endSeconds": 392.14
+  },
+  {
+    "id": "line-062",
+    "sequence": 61,
+    "text": "What had been the focus of my entire adult life was gone, and it was devastating.",
+    "startSeconds": 392.14,
+    "endSeconds": 397.349
+  },
+  {
+    "id": "line-063",
+    "sequence": 62,
+    "text": "I really didn't know what to do for a few months.",
+    "startSeconds": 397.349,
+    "endSeconds": 400.18
+  },
+  {
+    "id": "line-064",
+    "sequence": 63,
+    "text": "I felt that I had let the previous generation of entrepreneurs down - that I had dropped the baton as it was being passed to me.",
+    "startSeconds": 400.18,
+    "endSeconds": 407.475
+  },
+  {
+    "id": "line-065",
+    "sequence": 64,
+    "text": "I met with David Packard and Bob Noyce and tried to apologize for screwing up so badly.",
+    "startSeconds": 407.475,
+    "endSeconds": 413.302
+  },
+  {
+    "id": "line-066",
+    "sequence": 65,
+    "text": "I was a very public failure, and I even thought about running away from the valley.",
+    "startSeconds": 413.302,
+    "endSeconds": 417.6
+  },
+  {
+    "id": "line-067",
+    "sequence": 66,
+    "text": "But something slowly began to dawn on me — I still loved what I did.",
+    "startSeconds": 417.6,
+    "endSeconds": 423.835
+  },
+  {
+    "id": "line-068",
+    "sequence": 67,
+    "text": "The turn of events at Apple had not changed that one bit.",
+    "startSeconds": 423.835,
+    "endSeconds": 427.822
+  },
+  {
+    "id": "line-069",
+    "sequence": 68,
+    "text": "I had been rejected, but I was still in love.",
+    "startSeconds": 427.822,
+    "endSeconds": 431.005
+  },
+  {
+    "id": "line-070",
+    "sequence": 69,
+    "text": "And so I decided to start over.",
+    "startSeconds": 431.005,
+    "endSeconds": 433.769
+  },
+  {
+    "id": "line-071",
+    "sequence": 70,
+    "text": "I didn't see it then, but it turned out that getting fired from Apple was the best thing that could have ever happened to me.",
+    "startSeconds": 433.769,
+    "endSeconds": 440.153
+  },
+  {
+    "id": "line-072",
+    "sequence": 71,
+    "text": "The heaviness of being successful was replaced by the lightness of being a beginner again, less sure about everything.",
+    "startSeconds": 440.153,
+    "endSeconds": 446.908
+  },
+  {
+    "id": "line-073",
+    "sequence": 72,
+    "text": "It freed me to enter one of the most creative periods of my life.",
+    "startSeconds": 446.908,
+    "endSeconds": 450.42
+  },
+  {
+    "id": "line-074",
+    "sequence": 73,
+    "text": "During the next five years, I started a company named NeXT, another company named Pixar, and fell in love with an amazing woman who would become my wife.",
+    "startSeconds": 450.42,
+    "endSeconds": 458.48
+  },
+  {
+    "id": "line-075",
+    "sequence": 74,
+    "text": "Pixar went on to create the worlds first computer animated feature film, Toy Story, and is now the most successful animation studio in the world.",
+    "startSeconds": 458.48,
+    "endSeconds": 468.851
+  },
+  {
+    "id": "line-076",
+    "sequence": 75,
+    "text": "In a remarkable turn of events, Apple bought NeXT, I returned to Apple, and the technology we developed at NeXT is at the heart of Apple's current renaissance.",
+    "startSeconds": 468.851,
+    "endSeconds": 478.599
+  },
+  {
+    "id": "line-077",
+    "sequence": 76,
+    "text": "And Laurene and I have a wonderful family together.",
+    "startSeconds": 478.599,
+    "endSeconds": 482.88
+  },
+  {
+    "id": "line-078",
+    "sequence": 77,
+    "text": "I'm pretty sure none of this would have happened if I hadn't been fired from Apple.",
+    "startSeconds": 482.88,
+    "endSeconds": 487.228
+  },
+  {
+    "id": "line-079",
+    "sequence": 78,
+    "text": "It was awful tasting medicine, but I guess the patient needed it.",
+    "startSeconds": 487.228,
+    "endSeconds": 492.42
+  },
+  {
+    "id": "line-080",
+    "sequence": 79,
+    "text": "Sometimes life hits you in the head with a brick.",
+    "startSeconds": 492.42,
+    "endSeconds": 495.879
+  },
+  {
+    "id": "line-081",
+    "sequence": 80,
+    "text": "Don't lose faith.",
+    "startSeconds": 495.879,
+    "endSeconds": 497.028
+  },
+  {
+    "id": "line-082",
+    "sequence": 81,
+    "text": "I'm convinced true for your work as it is for your lovers.",
+    "startSeconds": 497.028,
+    "endSeconds": 507.142
+  },
+  {
+    "id": "line-083",
+    "sequence": 82,
+    "text": "Your work is going to fill a large part of your life, and the only way to be truly satisfied is to do what you believe is great work.",
+    "startSeconds": 507.142,
+    "endSeconds": 514.434
+  },
+  {
+    "id": "line-084",
+    "sequence": 83,
+    "text": "And the only way to do great work is to love what you do.",
+    "startSeconds": 514.434,
+    "endSeconds": 518.266
+  },
+  {
+    "id": "line-085",
+    "sequence": 84,
+    "text": "If you haven't found it yet, keep looking.",
+    "startSeconds": 518.266,
+    "endSeconds": 521.663
+  },
+  {
+    "id": "line-086",
+    "sequence": 85,
+    "text": "Don't settle.",
+    "startSeconds": 521.663,
+    "endSeconds": 522.611
+  },
+  {
+    "id": "line-087",
+    "sequence": 86,
+    "text": "As with all matters of the heart, you'll know when you find it.",
+    "startSeconds": 522.611,
+    "endSeconds": 526.6
+  },
+  {
+    "id": "line-088",
+    "sequence": 87,
+    "text": "And, like any great relationship, it just gets better and better as the years roll on.",
+    "startSeconds": 526.6,
+    "endSeconds": 531.57
+  },
+  {
+    "id": "line-089",
+    "sequence": 88,
+    "text": "So keep looking until you find it.",
+    "startSeconds": 531.57,
+    "endSeconds": 533.693
+  },
+  {
+    "id": "line-090",
+    "sequence": 89,
+    "text": "Don't settle.",
+    "startSeconds": 533.693,
+    "endSeconds": 544.76
+  },
+  {
+    "id": "line-091",
+    "sequence": 90,
+    "text": "My third story is about death.",
+    "startSeconds": 544.76,
+    "endSeconds": 547.996
+  },
+  {
+    "id": "line-092",
+    "sequence": 91,
+    "text": "When I was 17, I read a quote that went something like: \"If you live each day as if it was your last, someday you'll most certainly be right.\"",
+    "startSeconds": 547.996,
+    "endSeconds": 559.705
+  },
+  {
+    "id": "line-093",
+    "sequence": 92,
+    "text": "It made an impression on me, and since then, for the past 33 years, I have looked in the mirror every morning and asked myself: \"If today were the last day of my life, would I want to do what I am about to do today?\"",
+    "startSeconds": 559.705,
+    "endSeconds": 573.234
+  },
+  {
+    "id": "line-094",
+    "sequence": 93,
+    "text": "And whenever the answer has been \"No\" for too many days in a row, I know I need to change something.",
+    "startSeconds": 573.234,
+    "endSeconds": 579.42
+  },
+  {
+    "id": "line-095",
+    "sequence": 94,
+    "text": "Remembering that I'll be dead soon is the most important tool I've ever encountered to help me make the big choices in life.",
+    "startSeconds": 579.42,
+    "endSeconds": 587.12
+  },
+  {
+    "id": "line-096",
+    "sequence": 95,
+    "text": "Because almost everything — all external expectations, all pride, all fear of embarrassment or failure - these things just fall away in the face of death, leaving only what is truly important.",
+    "startSeconds": 587.12,
+    "endSeconds": 600.24
+  },
+  {
+    "id": "line-097",
+    "sequence": 96,
+    "text": "Remembering that you are going to die is the best way I know to avoid the trap of thinking you have something to lose.",
+    "startSeconds": 600.24,
+    "endSeconds": 607.349
+  },
+  {
+    "id": "line-098",
+    "sequence": 97,
+    "text": "You are already naked.",
+    "startSeconds": 607.349,
+    "endSeconds": 608.845
+  },
+  {
+    "id": "line-099",
+    "sequence": 98,
+    "text": "There is no reason not to follow your heart.",
+    "startSeconds": 608.845,
+    "endSeconds": 612.79
+  },
+  {
+    "id": "line-100",
+    "sequence": 99,
+    "text": "About a year ago I was diagnosed with cancer.",
+    "startSeconds": 612.79,
+    "endSeconds": 616.456
+  },
+  {
+    "id": "line-101",
+    "sequence": 100,
+    "text": "I had a scan at 7:30 in the morning, and it clearly showed a tumor on my pancreas.",
+    "startSeconds": 616.456,
+    "endSeconds": 621.909
+  },
+  {
+    "id": "line-102",
+    "sequence": 101,
+    "text": "I didn't even know what a pancreas was.",
+    "startSeconds": 621.909,
+    "endSeconds": 624.783
+  },
+  {
+    "id": "line-103",
+    "sequence": 102,
+    "text": "The doctors told me this was almost certainly a type of cancer that is incurable, and that I should expect to live no longer than three to six months.",
+    "startSeconds": 624.783,
+    "endSeconds": 634.585
+  },
+  {
+    "id": "line-104",
+    "sequence": 103,
+    "text": "My doctor advised me to go home and get my affairs in order, which is doctor's code for prepare to die.",
+    "startSeconds": 634.585,
+    "endSeconds": 642.816
+  },
+  {
+    "id": "line-105",
+    "sequence": 104,
+    "text": "It means to try to tell your kids everything you thought you'd have the next 10 years to tell them in just a few months.",
+    "startSeconds": 642.816,
+    "endSeconds": 650.531
+  },
+  {
+    "id": "line-106",
+    "sequence": 105,
+    "text": "It means to make sure everything is buttoned up so that it will be as easy as possible for your family.",
+    "startSeconds": 650.531,
+    "endSeconds": 656.663
+  },
+  {
+    "id": "line-107",
+    "sequence": 106,
+    "text": "It means to say your goodbyes.",
+    "startSeconds": 656.663,
+    "endSeconds": 660.76
+  },
+  {
+    "id": "line-108",
+    "sequence": 107,
+    "text": "I lived with that diagnosis all day.",
+    "startSeconds": 660.76,
+    "endSeconds": 663.454
+  },
+  {
+    "id": "line-109",
+    "sequence": 108,
+    "text": "Later that evening I had a biopsy, where they stuck an endoscope down my throat, through my stomach and into my intestines, put a needle into my pancreas and got a few cells from the tumor.",
+    "startSeconds": 663.454,
+    "endSeconds": 674.503
+  },
+  {
+    "id": "line-110",
+    "sequence": 109,
+    "text": "I was sedated, but my wife, who was there, told me that when they viewed the cells under a microscope the doctors started crying because it turned out to be a very rare form of pancreatic cancer that is curable with surgery.",
+    "startSeconds": 674.503,
+    "endSeconds": 687.891
+  },
+  {
+    "id": "line-111",
+    "sequence": 110,
+    "text": "I had the surgery and I'm fine now.",
+    "startSeconds": 687.891,
+    "endSeconds": 699.475
+  },
+  {
+    "id": "line-112",
+    "sequence": 111,
+    "text": "This was the closest I've been to facing death, and I hope its the closest I get for a few more decades.",
+    "startSeconds": 699.475,
+    "endSeconds": 706.094
+  },
+  {
+    "id": "line-113",
+    "sequence": 112,
+    "text": "Having lived through it, I can now say this to you with a bit more certainty than when death was a useful but purely intellectual concept: No one wants to die.",
+    "startSeconds": 706.094,
+    "endSeconds": 717.04
+  },
+  {
+    "id": "line-114",
+    "sequence": 113,
+    "text": "Even people who want to go to heaven don't want to die to get there.",
+    "startSeconds": 717.04,
+    "endSeconds": 721.421
+  },
+  {
+    "id": "line-115",
+    "sequence": 114,
+    "text": "And yet death is the destination we all share.",
+    "startSeconds": 721.421,
+    "endSeconds": 724.839
+  },
+  {
+    "id": "line-116",
+    "sequence": 115,
+    "text": "No one has ever escaped it.",
+    "startSeconds": 724.839,
+    "endSeconds": 727.035
+  },
+  {
+    "id": "line-117",
+    "sequence": 116,
+    "text": "And that is as it should be, because Death is very likely the single best invention of Life.",
+    "startSeconds": 727.035,
+    "endSeconds": 733.973
+  },
+  {
+    "id": "line-118",
+    "sequence": 117,
+    "text": "It is Life's change agent.",
+    "startSeconds": 733.973,
+    "endSeconds": 735.48
+  },
+  {
+    "id": "line-119",
+    "sequence": 118,
+    "text": "It clears out the old to make way for the new.",
+    "startSeconds": 735.48,
+    "endSeconds": 738.959
+  },
+  {
+    "id": "line-120",
+    "sequence": 119,
+    "text": "Right now the new is you, but someday not too long from now, you will gradually become the old and be cleared away.",
+    "startSeconds": 738.959,
+    "endSeconds": 746.879
+  },
+  {
+    "id": "line-121",
+    "sequence": 120,
+    "text": "Sorry to be so dramatic, but it is quite true.",
+    "startSeconds": 746.879,
+    "endSeconds": 751.284
+  },
+  {
+    "id": "line-122",
+    "sequence": 121,
+    "text": "Your time is limited, so don't waste it living someone else's life.",
+    "startSeconds": 751.284,
+    "endSeconds": 756.713
+  },
+  {
+    "id": "line-123",
+    "sequence": 122,
+    "text": "Don't be trapped by dogma — which is living with the results of other people's thinking.",
+    "startSeconds": 756.713,
+    "endSeconds": 762.36
+  },
+  {
+    "id": "line-124",
+    "sequence": 123,
+    "text": "Don't let the noise of others' opinions drown out your own inner voice.",
+    "startSeconds": 762.36,
+    "endSeconds": 766.34
+  },
+  {
+    "id": "line-125",
+    "sequence": 124,
+    "text": "And most important, have the courage to follow your heart and intuition.",
+    "startSeconds": 766.34,
+    "endSeconds": 770.693
+  },
+  {
+    "id": "line-126",
+    "sequence": 125,
+    "text": "They somehow already know what you truly want to become.",
+    "startSeconds": 770.693,
+    "endSeconds": 775.175
+  },
+  {
+    "id": "line-127",
+    "sequence": 126,
+    "text": "Everything else is secondary.",
+    "startSeconds": 775.175,
+    "endSeconds": 788.88
+  },
+  {
+    "id": "line-128",
+    "sequence": 127,
+    "text": "When I was young, there was an amazing publication called The Whole Earth Catalog, which was one of the bibles of my generation.",
+    "startSeconds": 788.88,
+    "endSeconds": 796.649
+  },
+  {
+    "id": "line-129",
+    "sequence": 128,
+    "text": "It was created by a fellow named Stewart Brand not far from here in Menlo Park, and he brought it to life with his poetic touch.",
+    "startSeconds": 796.649,
+    "endSeconds": 804.509
+  },
+  {
+    "id": "line-130",
+    "sequence": 129,
+    "text": "This was in the late 1960's, before personal computers and desktop publishing, so it was all made with typewriters, scissors, and polaroid cameras.",
+    "startSeconds": 804.509,
+    "endSeconds": 813.129
+  },
+  {
+    "id": "line-131",
+    "sequence": 130,
+    "text": "It was sort of like Google in paperback form, 35 years before Google came along: it was idealistic, and overflowing with neat tools and great notions.",
+    "startSeconds": 813.129,
+    "endSeconds": 823.829
+  },
+  {
+    "id": "line-132",
+    "sequence": 131,
+    "text": "Stewart and his team put out several issues of The Whole Earth Catalog, and then when it had run its course, they put out a final issue.",
+    "startSeconds": 823.829,
+    "endSeconds": 832.133
+  },
+  {
+    "id": "line-133",
+    "sequence": 132,
+    "text": "It was the mid-1970s, and I was your age.",
+    "startSeconds": 832.133,
+    "endSeconds": 837.089
+  },
+  {
+    "id": "line-134",
+    "sequence": 133,
+    "text": "On the back cover of their final issue was a photograph of an early morning country road, the kind you might find yourself hitchhiking on if you were so adventurous.",
+    "startSeconds": 837.089,
+    "endSeconds": 847.613
+  },
+  {
+    "id": "line-135",
+    "sequence": 134,
+    "text": "Beneath it were the words: \"Stay Hungry.",
+    "startSeconds": 847.613,
+    "endSeconds": 851.051
+  },
+  {
+    "id": "line-136",
+    "sequence": 135,
+    "text": "Stay Foolish.\"",
+    "startSeconds": 851.051,
+    "endSeconds": 852.022
+  },
+  {
+    "id": "line-137",
+    "sequence": 136,
+    "text": "It was their farewell message as they signed off.",
+    "startSeconds": 852.022,
+    "endSeconds": 856.291
+  },
+  {
+    "id": "line-138",
+    "sequence": 137,
+    "text": "Stay Hungry.",
+    "startSeconds": 856.291,
+    "endSeconds": 857.25
+  },
+  {
+    "id": "line-139",
+    "sequence": 138,
+    "text": "Stay Foolish.",
+    "startSeconds": 857.25,
+    "endSeconds": 858.233
+  },
+  {
+    "id": "line-140",
+    "sequence": 139,
+    "text": "And I have always wished that for myself.",
+    "startSeconds": 858.233,
+    "endSeconds": 862.215
+  },
+  {
+    "id": "line-141",
+    "sequence": 140,
+    "text": "And now, as you graduate to begin anew, I wish that for you.",
+    "startSeconds": 862.215,
+    "endSeconds": 868.448
+  },
+  {
+    "id": "line-142",
+    "sequence": 141,
+    "text": "Stay Hungry.",
+    "startSeconds": 868.448,
+    "endSeconds": 869.399
+  },
+  {
+    "id": "line-143",
+    "sequence": 142,
+    "text": "Stay Foolish.",
+    "startSeconds": 869.399,
+    "endSeconds": 870.732
+  },
+  {
+    "id": "line-144",
+    "sequence": 143,
+    "text": "Thank you all very much.",
+    "startSeconds": 870.732,
+    "endSeconds": 873
+  }
+]
