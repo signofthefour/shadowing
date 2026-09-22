@@ -1,5 +1,6 @@
 import { describe, expect, it } from 'vitest'
-import { STANFORD_SPEECH, validateTranscript } from './stanfordSpeech'
+import { STANFORD_SPEECH } from './stanfordSpeech'
+import { validateTranscript } from './validateTranscript'
 
 describe('Stanford speech data', () => {
   it('covers the full official speech video with timed practice lines', () => {

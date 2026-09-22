@@ -1,5 +1,4 @@
-import type { TranscriptLine } from '../domain/types'
-import generatedLines from './stanfordSpeech.generated.json'
+import type { TranscriptLine } from '../../domain/types'
 
 export function validateTranscript(lines: TranscriptLine[]): string[] {
   const errors: string[] = []
@@ -20,11 +19,4 @@ export function validateTranscript(lines: TranscriptLine[]): string[] {
   })
 
   return errors
-}
-
-export const STANFORD_SPEECH = {
-  id: 'steve-jobs-stanford-2005' as const,
-  title: "Steve Jobs' 2005 Stanford Commencement Address",
-  videoId: 'UF8uR6Z6KLc',
-  lines: generatedLines satisfies TranscriptLine[],
 }

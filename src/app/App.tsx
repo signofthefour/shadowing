@@ -8,7 +8,7 @@ import {
   useRef,
   useState,
 } from 'react'
-import { STANFORD_SPEECH } from '../data/stanfordSpeech'
+import { STANFORD_SPEECH } from '../data/speeches/stanfordSpeech'
 import { transition } from '../domain/practiceMachine'
 import type { PracticeState, StoredTake } from '../domain/types'
 import { exportSessionMp3 } from '../features/export/mp3Exporter'

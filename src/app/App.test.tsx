@@ -6,7 +6,7 @@ import { App } from './App'
 import type { SessionStore } from '../features/session/sessionStore'
 import type { YouTubePlayerHandle } from '../features/player/YouTubePlayer'
 import type { AudioRecorderPort } from '../features/recorder/audioRecorder'
-import { STANFORD_SPEECH } from '../data/stanfordSpeech'
+import { STANFORD_SPEECH } from '../data/speeches/stanfordSpeech'
 
 function createRestoredStore(): SessionStore {
   let erased = false

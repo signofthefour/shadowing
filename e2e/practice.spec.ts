@@ -1,5 +1,5 @@
 import { expect, test } from '@playwright/test'
-import transcriptLines from '../src/data/stanfordSpeech.generated.json' with { type: 'json' }
+import transcriptLines from '../src/data/speeches/stanfordSpeech.generated.json' with { type: 'json' }
 
 const SPEECH_ID = 'steve-jobs-stanford-2005'
 
