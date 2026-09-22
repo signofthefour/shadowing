@@ -49,4 +49,21 @@ describe('session store', () => {
 
     expect(await store.load(session.speechId)).toEqual({ session: null, takes: [] })
   })
+
+  it('reports progress without loading take blobs', async () => {
+    const store = createSessionStore()
+
+    expect(await store.getProgress(session.speechId)).toEqual({
+      completedCount: 0,
+      activeLineId: null,
+    })
+
+    await store.saveProgress(session)
+    await store.replaceTake(session.speechId, take)
+
+    expect(await store.getProgress(session.speechId)).toEqual({
+      completedCount: 1,
+      activeLineId: session.activeLineId,
+    })
+  })
 })
