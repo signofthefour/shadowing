@@ -2,11 +2,11 @@ import { forwardRef, useImperativeHandle } from 'react'
 import { act, fireEvent, render, screen } from '@testing-library/react'
 import userEvent from '@testing-library/user-event'
 import { describe, expect, it, vi } from 'vitest'
-import { App } from './App'
-import type { SessionStore } from '../features/session/sessionStore'
-import type { YouTubePlayerHandle } from '../features/player/YouTubePlayer'
-import type { AudioRecorderPort } from '../features/recorder/audioRecorder'
-import { STANFORD_SPEECH } from '../data/speeches/stanfordSpeech'
+import { Practice } from './Practice'
+import type { SessionStore } from '../session/sessionStore'
+import type { YouTubePlayerHandle } from '../player/YouTubePlayer'
+import type { AudioRecorderPort } from '../recorder/audioRecorder'
+import { STANFORD_SPEECH } from '../../data/speeches/stanfordSpeech'
 
 function createRestoredStore(): SessionStore {
   let erased = false
@@ -24,6 +24,9 @@ function createRestoredStore(): SessionStore {
             takes: [],
           }
     },
+    async getProgress() {
+      return { completedCount: 0, activeLineId: null }
+    },
     async saveProgress() {},
     async replaceTake() {},
     async discard() {
@@ -36,7 +39,7 @@ describe('Quit & Erase', () => {
   it('keeps progress when canceled and resets after confirmation', async () => {
     const user = userEvent.setup()
     const confirm = vi.spyOn(window, 'confirm')
-    render(<App store={createRestoredStore()} />)
+    render(<Practice speech={STANFORD_SPEECH} store={createRestoredStore()} onExitToLibrary={() => {}} />)
 
     expect(await screen.findByText(`Line 2 of ${STANFORD_SPEECH.lines.length}`)).toBeInTheDocument()
 
@@ -52,7 +55,7 @@ describe('Quit & Erase', () => {
 
 describe('guided practice loop', () => {
   it('links home to the configured deployment base path', async () => {
-    render(<App store={createRestoredStore()} />)
+    render(<Practice speech={STANFORD_SPEECH} store={createRestoredStore()} onExitToLibrary={() => {}} />)
 
     await screen.findByText(`Line 2 of ${STANFORD_SPEECH.lines.length}`)
     expect(screen.getByRole('link', { name: 'Speak Along home' })).toHaveAttribute(
@@ -77,11 +80,14 @@ describe('guided practice loop', () => {
           takes: [],
         }
       },
+      async getProgress() {
+        return { completedCount: 0, activeLineId: null }
+      },
       saveProgress,
       async replaceTake() {},
       async discard() {},
     }
-    render(<App store={store} />)
+    render(<Practice speech={STANFORD_SPEECH} store={store} onExitToLibrary={() => {}} />)
 
     await screen.findByText(`Line 143 of ${STANFORD_SPEECH.lines.length}`)
     const next = screen.getByRole('button', { name: /^next$/i })
@@ -112,11 +118,14 @@ describe('guided practice loop', () => {
           takes: [],
         }
       },
+      async getProgress() {
+        return { completedCount: 0, activeLineId: null }
+      },
       saveProgress,
       async replaceTake() {},
       async discard() {},
     }
-    render(<App store={store} />)
+    render(<Practice speech={STANFORD_SPEECH} store={store} onExitToLibrary={() => {}} />)
 
     await screen.findByText(`Line 144 of ${STANFORD_SPEECH.lines.length}`)
     await user.click(screen.getByRole('button', { name: /^next$/i }))
@@ -129,7 +138,7 @@ describe('guided practice loop', () => {
 
   it('advances to the next line without requiring a recording', async () => {
     const user = userEvent.setup()
-    render(<App store={createRestoredStore()} />)
+    render(<Practice speech={STANFORD_SPEECH} store={createRestoredStore()} onExitToLibrary={() => {}} />)
 
     await screen.findByText(`Line 2 of ${STANFORD_SPEECH.lines.length}`)
     const next = screen.getByRole('button', { name: /^next$/i })
@@ -164,15 +173,17 @@ describe('guided practice loop', () => {
     })
 
     render(
-      <App
+      <Practice
+        speech={STANFORD_SPEECH}
         store={store}
+        onExitToLibrary={() => {}}
         playerComponent={FakePlayer}
         recorderFactory={async () => recorder}
       />,
     )
 
     await screen.findByText(`Line 2 of ${STANFORD_SPEECH.lines.length}`)
-    await user.click(screen.getByRole('button', { name: /hear steve/i }))
+    await user.click(screen.getByRole('button', { name: /hear this line/i }))
     await user.click(screen.getByRole('button', { name: /finish source line/i }))
     await user.click(screen.getByRole('button', { name: /^record$/i }))
     await user.click(screen.getByRole('button', { name: /^stop$/i }))
@@ -192,9 +203,17 @@ describe('guided practice loop', () => {
       useImperativeHandle(ref, () => ({ playRange() {}, cue() {} }))
       return <button onClick={onFinished}>Finish source line</button>
     })
-    render(<App store={createRestoredStore()} playerComponent={FakePlayer} recorderFactory={async () => { throw new Error('Microphone blocked.') }} />)
+    render(
+      <Practice
+        speech={STANFORD_SPEECH}
+        store={createRestoredStore()}
+        onExitToLibrary={() => {}}
+        playerComponent={FakePlayer}
+        recorderFactory={async () => { throw new Error('Microphone blocked.') }}
+      />,
+    )
     await screen.findByText(`Line 2 of ${STANFORD_SPEECH.lines.length}`)
-    await user.click(screen.getByRole('button', { name: /hear steve/i }))
+    await user.click(screen.getByRole('button', { name: /hear this line/i }))
     await user.click(screen.getByRole('button', { name: /finish source line/i }))
     await user.click(screen.getByRole('button', { name: /^record$/i }))
     expect(await screen.findByRole('alert')).toHaveTextContent('Microphone blocked.')

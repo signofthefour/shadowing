@@ -37,6 +37,7 @@ button:disabled { cursor: not-allowed; opacity: .38; }
 .finish-card { max-width: 760px; margin: 2rem auto; padding: 3rem; border-radius: 24px; background: #fffdf8; text-align: center; }
 .finish-card h1 { font-family: Georgia, serif; font-size: clamp(2rem, 5vw, 4rem); }
 .error-banner { max-width: 860px; margin: 1rem auto; padding: 1rem; border-radius: 12px; background: #ffe8df; color: #7d2715; }
+.speech-name { font-weight: 600; color: #5b5548; }
 .loading { min-height: 100vh; display: grid; place-items: center; }
 button:focus-visible, a:focus-visible { outline: 3px solid #d97732; outline-offset: 3px; }
 
@@ -49,7 +50,7 @@ button:focus-visible, a:focus-visible { outline: 3px solid #d97732; outline-offs
   .lyric-line.is-active { font-size: clamp(2rem, 9vw, 3rem); }
   .control-dock { margin-top: 1rem; position: static; flex-direction: column; }
   .phase-copy { text-align: center; }
-  .session-meta > span { display: none; }
+  .session-meta > .recorded-count { display: none; }
 }
 
 @media (prefers-reduced-motion: reduce) {
