@@ -14,8 +14,15 @@ export type StoredTake = {
   recordedAt: string
 }
 
+export type Speech = {
+  id: string
+  title: string
+  videoId: string
+  lines: TranscriptLine[]
+}
+
 export type PracticeSession = {
-  speechId: 'steve-jobs-stanford-2005'
+  speechId: string
   activeLineId: string
   completedLineIds: string[]
   updatedAt: string
