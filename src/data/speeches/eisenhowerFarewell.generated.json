@@ -1,0 +1,548 @@
+[
+  {
+    "id": "line-001",
+    "sequence": 0,
+    "text": "My fellow Americans: Three days from now, after half a century in the service of our country, I shall lay down the responsibilities of office as, in traditional and solemn ceremony, the authority of the Presidency is vested in my successor.",
+    "startSeconds": 1.544,
+    "endSeconds": 39.44
+  },
+  {
+    "id": "line-002",
+    "sequence": 1,
+    "text": "This evening I come to you with a message of leave-taking and farewell, and to share a few final thoughts with you, my countrymen.",
+    "startSeconds": 39.44,
+    "endSeconds": 53.52
+  },
+  {
+    "id": "line-003",
+    "sequence": 2,
+    "text": "Like every other citizen, I wish the new President, and all who will labor with him, Godspeed.",
+    "startSeconds": 53.52,
+    "endSeconds": 59.52
+  },
+  {
+    "id": "line-004",
+    "sequence": 3,
+    "text": "I pray that the coming years will be blessed with peace and prosperity for all.",
+    "startSeconds": 59.52,
+    "endSeconds": 65.88
+  },
+  {
+    "id": "line-005",
+    "sequence": 4,
+    "text": "Our people expect their President and the Congress to find essential agreement on issues of great moment, the wise resolution of which will better shape the future of the Nation.",
+    "startSeconds": 65.88,
+    "endSeconds": 79.24
+  },
+  {
+    "id": "line-006",
+    "sequence": 5,
+    "text": "My own relations with the Congress, which began on a remote and tenuous basis when, long ago, a member of the Senate appointed me to West Point, have since ranged to the intimate during the war and immediate post-war period, and, finally, to the mutually interdependent during these past eight years.",
+    "startSeconds": 79.24,
+    "endSeconds": 102.92
+  },
+  {
+    "id": "line-007",
+    "sequence": 6,
+    "text": "In this final relationship, the Congress and the Administration have, on most vital issues, cooperated well, to serve the national good rather than mere partisanship, and so have assured that the business of the Nation should go forward.",
+    "startSeconds": 102.92,
+    "endSeconds": 121.8
+  },
+  {
+    "id": "line-008",
+    "sequence": 7,
+    "text": "So, my official relationship with the Congress ends in a feeling, on my part, of gratitude that we have been able to do so much together.",
+    "startSeconds": 121.8,
+    "endSeconds": 133.84
+  },
+  {
+    "id": "line-009",
+    "sequence": 8,
+    "text": "We now stand ten years past the midpoint of a century that has witnessed four major wars among great nations.",
+    "startSeconds": 133.84,
+    "endSeconds": 141.8
+  },
+  {
+    "id": "line-010",
+    "sequence": 9,
+    "text": "Three of these involved our own country.",
+    "startSeconds": 141.8,
+    "endSeconds": 145.12
+  },
+  {
+    "id": "line-011",
+    "sequence": 10,
+    "text": "Despite these holocausts America is today the strongest, the most influential and most productive nation in the world.",
+    "startSeconds": 145.12,
+    "endSeconds": 155.6
+  },
+  {
+    "id": "line-012",
+    "sequence": 11,
+    "text": "Understandably proud of this pre-eminence, we yet realize that America's leadership and prestige depend, not merely upon our unmatched material progress, riches and military strength, but on how we use our power in the interests of world peace and human betterment.",
+    "startSeconds": 155.6,
+    "endSeconds": 177.8
+  },
+  {
+    "id": "line-013",
+    "sequence": 12,
+    "text": "Throughout America's adventure in free government, our basic purposes have been to keep the peace; to foster progress in human achievement, and to enhance liberty, dignity and integrity among people and among nations.",
+    "startSeconds": 177.8,
+    "endSeconds": 193.12
+  },
+  {
+    "id": "line-014",
+    "sequence": 13,
+    "text": "To strive for less would be unworthy of a free and religious people.",
+    "startSeconds": 193.12,
+    "endSeconds": 198.36
+  },
+  {
+    "id": "line-015",
+    "sequence": 14,
+    "text": "Any failure traceable to arrogance, or our lack of comprehension or readiness to sacrifice would inflict upon us grievous hurt both at home and abroad.",
+    "startSeconds": 198.36,
+    "endSeconds": 212.88
+  },
+  {
+    "id": "line-016",
+    "sequence": 15,
+    "text": "Progress toward these noble goals is persistently threatened by the conflict now engulfing the world.",
+    "startSeconds": 212.88,
+    "endSeconds": 220.36
+  },
+  {
+    "id": "line-017",
+    "sequence": 16,
+    "text": "It commands our whole attention, absorbs our very beings.",
+    "startSeconds": 220.36,
+    "endSeconds": 224.68
+  },
+  {
+    "id": "line-018",
+    "sequence": 17,
+    "text": "We face a hostile ideology-global in scope, atheistic in character, ruthless in purpose, and insidious in method.",
+    "startSeconds": 224.68,
+    "endSeconds": 235.92
+  },
+  {
+    "id": "line-019",
+    "sequence": 18,
+    "text": "Unhappily the danger it poses promises to be of indefinite duration.",
+    "startSeconds": 235.92,
+    "endSeconds": 243
+  },
+  {
+    "id": "line-020",
+    "sequence": 19,
+    "text": "To meet it successfully, there is called for, not so much the emotional and transitory sacrifices of crisis, but rather those which enable us to carry forward steadily, surely, and without complaint the burdens of a prolonged and complex struggle-with liberty at stake.",
+    "startSeconds": 243,
+    "endSeconds": 264.32
+  },
+  {
+    "id": "line-021",
+    "sequence": 20,
+    "text": "Only thus shall we remain, despite every provocation, on our charted course toward permanent peace and human betterment.",
+    "startSeconds": 264.32,
+    "endSeconds": 273.64
+  },
+  {
+    "id": "line-022",
+    "sequence": 21,
+    "text": "Crises there will continue to be.",
+    "startSeconds": 273.64,
+    "endSeconds": 276.48
+  },
+  {
+    "id": "line-023",
+    "sequence": 22,
+    "text": "In meeting them, whether foreign or domestic, great or small, there is a recurring temptation to feel that some spectacular and costly action could become the miraculous solution to all current difficulties.",
+    "startSeconds": 276.48,
+    "endSeconds": 292.28
+  },
+  {
+    "id": "line-024",
+    "sequence": 23,
+    "text": "A huge increase in newer elements of our defense; development of unrealistic programs to cure every ill in agriculture; a dramatic expansion in basic and applied research-these and many other possibilities, each possibly promising in itself, may be suggested as the only way to the road we wish to travel.",
+    "startSeconds": 292.28,
+    "endSeconds": 317.44
+  },
+  {
+    "id": "line-025",
+    "sequence": 24,
+    "text": "But each proposal must be weighed in the light of a broader consideration: the need to maintain balance in and among national programs-balance between the private and the public economy, balance between cost and hoped for advantage-balance between the clearly necessary and the comfortably desirable; balance between our essential requirements as a nation and the duties imposed by the nation upon the individual; balance between action of the moment and the national welfare of the future.",
+    "startSeconds": 317.44,
+    "endSeconds": 356.36
+  },
+  {
+    "id": "line-026",
+    "sequence": 25,
+    "text": "Good judgment seeks balance and progress; lack of it eventually finds imbalance and frustration.",
+    "startSeconds": 356.36,
+    "endSeconds": 365.76
+  },
+  {
+    "id": "line-027",
+    "sequence": 26,
+    "text": "The record of many decades stands as proof that our people and their government have, in the main, understood these truths and have responded to them well, in the face of stress and threat.",
+    "startSeconds": 365.76,
+    "endSeconds": 380.88
+  },
+  {
+    "id": "line-028",
+    "sequence": 27,
+    "text": "But threats, new in kind or degree, constantly arise.",
+    "startSeconds": 380.88,
+    "endSeconds": 386.853
+  },
+  {
+    "id": "line-029",
+    "sequence": 28,
+    "text": "I mention two only.",
+    "startSeconds": 386.853,
+    "endSeconds": 389.6
+  },
+  {
+    "id": "line-030",
+    "sequence": 29,
+    "text": "A vital element in keeping the peace is our military establishment.",
+    "startSeconds": 389.6,
+    "endSeconds": 393.96
+  },
+  {
+    "id": "line-031",
+    "sequence": 30,
+    "text": "Our arms must be mighty, ready for instant action, so that no potential aggressor may be tempted to risk his own destruction.",
+    "startSeconds": 393.96,
+    "endSeconds": 403.76
+  },
+  {
+    "id": "line-032",
+    "sequence": 31,
+    "text": "Our military organization today bears little relation to that known by any of my predecessors in peace time, or indeed by the fighting men of World War II or Korea.",
+    "startSeconds": 403.76,
+    "endSeconds": 417.2
+  },
+  {
+    "id": "line-033",
+    "sequence": 32,
+    "text": "Until the latest of our world conflicts, the United States had no armaments industry.",
+    "startSeconds": 417.2,
+    "endSeconds": 424.2
+  },
+  {
+    "id": "line-034",
+    "sequence": 33,
+    "text": "American makers of plowshares could, with time and as required, make swords as well.",
+    "startSeconds": 424.2,
+    "endSeconds": 432.48
+  },
+  {
+    "id": "line-035",
+    "sequence": 34,
+    "text": "But now we can no longer risk emergency improvisation of national defense; we have been compelled to create a permanent armaments industry of vast proportions.",
+    "startSeconds": 432.48,
+    "endSeconds": 444.04
+  },
+  {
+    "id": "line-036",
+    "sequence": 35,
+    "text": "Added to this, three and a half million men and women are directly engaged in the defense establishment.",
+    "startSeconds": 444.04,
+    "endSeconds": 452.2
+  },
+  {
+    "id": "line-037",
+    "sequence": 36,
+    "text": "We annually spend on military security more than the net income of all United State corporations.",
+    "startSeconds": 452.2,
+    "endSeconds": 462.687
+  },
+  {
+    "id": "line-038",
+    "sequence": 37,
+    "text": "This conjunction of an immense military establishment and a large arms industry is new in the American experience.",
+    "startSeconds": 462.687,
+    "endSeconds": 471.36
+  },
+  {
+    "id": "line-039",
+    "sequence": 38,
+    "text": "The total influence-economic, political, even spiritual-is felt in every city, every state house, every office of the Federal government.",
+    "startSeconds": 471.36,
+    "endSeconds": 482.64
+  },
+  {
+    "id": "line-040",
+    "sequence": 39,
+    "text": "We recognize the imperative need for this development.",
+    "startSeconds": 482.64,
+    "endSeconds": 486.32
+  },
+  {
+    "id": "line-041",
+    "sequence": 40,
+    "text": "Yet we must not fail to comprehend its grave implications.",
+    "startSeconds": 486.32,
+    "endSeconds": 491.56
+  },
+  {
+    "id": "line-042",
+    "sequence": 41,
+    "text": "Our toil, resources and livelihood are all involved; so is the very structure of our society.",
+    "startSeconds": 491.56,
+    "endSeconds": 499.88
+  },
+  {
+    "id": "line-043",
+    "sequence": 42,
+    "text": "In the councils of government, we must guard against the acquisition of unwarranted influence, whether sought or unsought, by the military-industrial complex.",
+    "startSeconds": 499.88,
+    "endSeconds": 511.96
+  },
+  {
+    "id": "line-044",
+    "sequence": 43,
+    "text": "The potential for the disastrous rise of misplaced power exists and will persist.",
+    "startSeconds": 511.96,
+    "endSeconds": 518.719
+  },
+  {
+    "id": "line-045",
+    "sequence": 44,
+    "text": "We must never let the weight of this combination endanger our liberties or democratic processes.",
+    "startSeconds": 518.719,
+    "endSeconds": 524.92
+  },
+  {
+    "id": "line-046",
+    "sequence": 45,
+    "text": "We should take nothing for granted.",
+    "startSeconds": 524.92,
+    "endSeconds": 527.64
+  },
+  {
+    "id": "line-047",
+    "sequence": 46,
+    "text": "Only an alert and knowledgeable citizenry can compel the proper meshing of the huge industrial and military machinery of defense with our peaceful methods and goals, so that security and liberty may prosper together.",
+    "startSeconds": 527.64,
+    "endSeconds": 545.6
+  },
+  {
+    "id": "line-048",
+    "sequence": 47,
+    "text": "Akin to, and largely responsible for the sweeping changes in our industrial-military posture, has been the technological revolution during recent decades.",
+    "startSeconds": 545.6,
+    "endSeconds": 556.8
+  },
+  {
+    "id": "line-049",
+    "sequence": 48,
+    "text": "In this revolution, research has become central; it also becomes more formalized, complex, and costly.",
+    "startSeconds": 556.8,
+    "endSeconds": 566.28
+  },
+  {
+    "id": "line-050",
+    "sequence": 49,
+    "text": "A steadily increasing share is conducted for, by, or at the direction of, the Federal government.",
+    "startSeconds": 566.28,
+    "endSeconds": 573.56
+  },
+  {
+    "id": "line-051",
+    "sequence": 50,
+    "text": "Today, the solitary inventor, tinkering in his shop, has been over shadowed by task forces of scientists in laboratories and testing fields.",
+    "startSeconds": 573.56,
+    "endSeconds": 585.72
+  },
+  {
+    "id": "line-052",
+    "sequence": 51,
+    "text": "In the same fashion, the free university, historically the fountainhead of free ideas and scientific discovery, has experienced a revolution in the conduct of research.",
+    "startSeconds": 585.72,
+    "endSeconds": 600.76
+  },
+  {
+    "id": "line-053",
+    "sequence": 52,
+    "text": "Partly because of the huge costs involved, a government contract becomes virtually a substitute for intellectual curiosity.",
+    "startSeconds": 600.76,
+    "endSeconds": 611.4
+  },
+  {
+    "id": "line-054",
+    "sequence": 53,
+    "text": "For every old blackboard there are now hundreds of new electronic computers.",
+    "startSeconds": 611.4,
+    "endSeconds": 618.52
+  },
+  {
+    "id": "line-055",
+    "sequence": 54,
+    "text": "The prospect of domination of the nation's scholars by Federal employment, project allocations, and the power of money is ever present and is gravely to be regarded.",
+    "startSeconds": 618.52,
+    "endSeconds": 631.08
+  },
+  {
+    "id": "line-056",
+    "sequence": 55,
+    "text": "Yet, in holding scientific research and discovery in respect, as we should, we must also be alert to the equal and opposite danger that public policy could itself become the captive of a scientific-technological elite.",
+    "startSeconds": 631.08,
+    "endSeconds": 650.2
+  },
+  {
+    "id": "line-057",
+    "sequence": 56,
+    "text": "It is the task of statesmanship to mold, to balance, and to integrate these and other forces, new and old, within the principles of our democratic system-ever aiming toward the supreme goals of our free society.",
+    "startSeconds": 650.2,
+    "endSeconds": 667.08
+  },
+  {
+    "id": "line-058",
+    "sequence": 57,
+    "text": "Another factor in maintaining balance involves the element of time.",
+    "startSeconds": 667.08,
+    "endSeconds": 672.56
+  },
+  {
+    "id": "line-059",
+    "sequence": 58,
+    "text": "As we peer into society's future, we-you and I, and our government-must avoid the impulse to live only for today, plundering, for our own ease and convenience, the precious resources of tomorrow.",
+    "startSeconds": 672.56,
+    "endSeconds": 689.56
+  },
+  {
+    "id": "line-060",
+    "sequence": 59,
+    "text": "We cannot mortgage the material assets of our grandchildren without risking the loss also of their political and spiritual heritage.",
+    "startSeconds": 689.56,
+    "endSeconds": 699.64
+  },
+  {
+    "id": "line-061",
+    "sequence": 60,
+    "text": "We want democracy to survive for all generations to come, not to become the insolvent phantom of tomorrow.",
+    "startSeconds": 699.64,
+    "endSeconds": 709.64
+  },
+  {
+    "id": "line-062",
+    "sequence": 61,
+    "text": "Down the long lane of the history yet to be written America knows that this world of ours, ever growing smaller, must avoid becoming a community of dreadful fear and hate, and be, instead, a proud confederation of mutual trust and respect.",
+    "startSeconds": 709.64,
+    "endSeconds": 728.24
+  },
+  {
+    "id": "line-063",
+    "sequence": 62,
+    "text": "Such a confederation must be one of equals.",
+    "startSeconds": 728.24,
+    "endSeconds": 731.32
+  },
+  {
+    "id": "line-064",
+    "sequence": 63,
+    "text": "The weakest must come to the conference table with the same confidence as do we, protected as we are by our moral, economic, and military strength.",
+    "startSeconds": 731.32,
+    "endSeconds": 743.24
+  },
+  {
+    "id": "line-065",
+    "sequence": 64,
+    "text": "That table, though scarred by many past frustrations, cannot be abandoned for the certain agony of the battlefield.",
+    "startSeconds": 743.24,
+    "endSeconds": 754.28
+  },
+  {
+    "id": "line-066",
+    "sequence": 65,
+    "text": "Disarmament, with mutual honor and confidence, is a continuing imperative.",
+    "startSeconds": 754.28,
+    "endSeconds": 760.32
+  },
+  {
+    "id": "line-067",
+    "sequence": 66,
+    "text": "Together we must learn how to compose difference, not with arms, but with intellect and decent purpose.",
+    "startSeconds": 760.32,
+    "endSeconds": 768.92
+  },
+  {
+    "id": "line-068",
+    "sequence": 67,
+    "text": "Because this need is so sharp and apparent I confess that I lay down my official responsibilities in this field with a definite sense of disappointment.",
+    "startSeconds": 768.92,
+    "endSeconds": 780.839
+  },
+  {
+    "id": "line-069",
+    "sequence": 68,
+    "text": "As one who has witnessed the horror and the lingering sadness of war-as one who knows that another war could utterly destroy this civilization which has been so slowly and painfully built over thousands of years-I wish I could say tonight that a lasting peace is in sight.",
+    "startSeconds": 780.839,
+    "endSeconds": 801.44
+  },
+  {
+    "id": "line-070",
+    "sequence": 69,
+    "text": "Happily, I can say that war has been avoided.",
+    "startSeconds": 801.44,
+    "endSeconds": 805.28
+  },
+  {
+    "id": "line-071",
+    "sequence": 70,
+    "text": "Steady progress toward our ultimate goal has been made.",
+    "startSeconds": 805.28,
+    "endSeconds": 809.24
+  },
+  {
+    "id": "line-072",
+    "sequence": 71,
+    "text": "But, so much remains to be done.",
+    "startSeconds": 809.24,
+    "endSeconds": 812.88
+  },
+  {
+    "id": "line-073",
+    "sequence": 72,
+    "text": "As a private citizen, I shall never cease to do what little I can to help the world advance along that road.",
+    "startSeconds": 812.88,
+    "endSeconds": 821.836
+  },
+  {
+    "id": "line-074",
+    "sequence": 73,
+    "text": "So-in this my last good night to you as your President-I thank you for the many opportunities you have given me for public service in war and peace.",
+    "startSeconds": 821.836,
+    "endSeconds": 832.48
+  },
+  {
+    "id": "line-075",
+    "sequence": 74,
+    "text": "I trust that in that service you find somethings worthy; as for the rest of it, I know you will find ways to improve performance in the future.",
+    "startSeconds": 832.48,
+    "endSeconds": 844.68
+  },
+  {
+    "id": "line-076",
+    "sequence": 75,
+    "text": "You and I-my fellow citizens-need to be strong in our faith that all nations, under God, will reach the goal of peace with justice.",
+    "startSeconds": 844.68,
+    "endSeconds": 855.44
+  },
+  {
+    "id": "line-077",
+    "sequence": 76,
+    "text": "May we be ever unswerving in devotion to principle, confident but humble with power, diligent in pursuit of the Nation's great goals.",
+    "startSeconds": 855.44,
+    "endSeconds": 866.64
+  },
+  {
+    "id": "line-078",
+    "sequence": 77,
+    "text": "To all the peoples of the world, I once more give expression to America's prayerful and continuing inspiration: We pray that peoples of all faiths, all races, all nations, may have their great human needs satisfied; that those now denied opportunity shall come to enjoy it to the full; that all who yearn for freedom may experience its spiritual blessings; that those who have freedom will understand, also, its heavy responsibilities; that all who are insensitive to the needs of others will learn charity; that the scourges of poverty, disease and ignorance will be made to disappear from the earth, and that, in the goodness of time, all peoples will come to live together in a peace guaranteed by the binding force of mutual respect and love.",
+    "startSeconds": 866.64,
+    "endSeconds": 942.68
+  }
+]

@@ -1,0 +1,387 @@
+[
+  {
+    "id": "line-001",
+    "sequence": 0,
+    "text": "Vice President Johnson, Mr.",
+    "startSeconds": 11.44,
+    "endSeconds": 14.903
+  },
+  {
+    "id": "line-002",
+    "sequence": 1,
+    "text": "Speaker, Mr.",
+    "startSeconds": 14.903,
+    "endSeconds": 16.635
+  },
+  {
+    "id": "line-003",
+    "sequence": 2,
+    "text": "Chief Justice, President Eisenhower, Vice President Nixon, President Truman, reverend clergy, fellow citizens, we observe today not a victory of party, but a celebration of freedom--symbolizing an end, as well as a beginning--signifying renewal, as well as change.",
+    "startSeconds": 16.635,
+    "endSeconds": 46.62
+  },
+  {
+    "id": "line-004",
+    "sequence": 3,
+    "text": "For I have sworn before you and Almighty God the same solemn oath our forebears prescribed nearly a century and three quarters ago.",
+    "startSeconds": 46.62,
+    "endSeconds": 62.62
+  },
+  {
+    "id": "line-005",
+    "sequence": 4,
+    "text": "The world is very different now.",
+    "startSeconds": 62.62,
+    "endSeconds": 66.05
+  },
+  {
+    "id": "line-006",
+    "sequence": 5,
+    "text": "For man holds in his mortal hands the power to abolish all forms of human poverty and all forms of human life.",
+    "startSeconds": 66.05,
+    "endSeconds": 78.97
+  },
+  {
+    "id": "line-007",
+    "sequence": 6,
+    "text": "And yet the same revolutionary beliefs for which our forebears fought are still at issue around the globe--the belief that the rights of man come not from the generosity of the state, but from the hand of God.",
+    "startSeconds": 78.97,
+    "endSeconds": 98.95
+  },
+  {
+    "id": "line-008",
+    "sequence": 7,
+    "text": "We dare not forget today that we are the heirs of that first revolution.",
+    "startSeconds": 98.95,
+    "endSeconds": 105.44
+  },
+  {
+    "id": "line-009",
+    "sequence": 8,
+    "text": "Let the word go forth from this time and place, to friend and foe alike, that the torch has been passed to a new generation of Americans--born in this century, tempered by war, disciplined by a hard and bitter peace, proud of our ancient heritage--and unwilling to witness or permit the slow undoing of those human rights to which this Nation has always been committed, and to which we are committed today at home and around the world.",
+    "startSeconds": 105.44,
+    "endSeconds": 151.511
+  },
+  {
+    "id": "line-010",
+    "sequence": 9,
+    "text": "Let every nation know, whether it wishes us well or ill, that we shall pay any price, bear any burden, meet any hardship, support any friend, oppose any foe, in order to assure the survival and the success of liberty.",
+    "startSeconds": 151.511,
+    "endSeconds": 185.99
+  },
+  {
+    "id": "line-011",
+    "sequence": 10,
+    "text": "This much we pledge--and more.",
+    "startSeconds": 185.99,
+    "endSeconds": 193.72
+  },
+  {
+    "id": "line-012",
+    "sequence": 11,
+    "text": "To those old allies whose cultural and spiritual origins we share, we pledge the loyalty of faithful friends.",
+    "startSeconds": 193.72,
+    "endSeconds": 205.65
+  },
+  {
+    "id": "line-013",
+    "sequence": 12,
+    "text": "United, there is little we cannot do in a host of cooperative ventures.",
+    "startSeconds": 205.65,
+    "endSeconds": 211.19
+  },
+  {
+    "id": "line-014",
+    "sequence": 13,
+    "text": "Divided, there is little we can do--for we dare not meet a powerful challenge at odds and split asunder.",
+    "startSeconds": 211.19,
+    "endSeconds": 220.97
+  },
+  {
+    "id": "line-015",
+    "sequence": 14,
+    "text": "To those new States whom we welcome to the ranks of the free, we pledge our word that one form of colonial control shall not have passed away merely to be replaced by a far more iron tyranny.",
+    "startSeconds": 220.97,
+    "endSeconds": 241.5
+  },
+  {
+    "id": "line-016",
+    "sequence": 15,
+    "text": "We shall not always expect to find them supporting our view.",
+    "startSeconds": 241.5,
+    "endSeconds": 246.04
+  },
+  {
+    "id": "line-017",
+    "sequence": 16,
+    "text": "But we shall always hope to find them strongly supporting their own freedom--and to remember that, in the past, those who foolishly sought power by riding the back of the tiger ended up inside.",
+    "startSeconds": 246.04,
+    "endSeconds": 271.3
+  },
+  {
+    "id": "line-018",
+    "sequence": 17,
+    "text": "To those peoples in the huts and villages across the globe struggling to break the bonds of mass misery, we pledge our best efforts to help them help themselves, for whatever period is required--not because the Communists may be doing it, not because we seek their votes, but because it is right.",
+    "startSeconds": 271.3,
+    "endSeconds": 297.78
+  },
+  {
+    "id": "line-019",
+    "sequence": 18,
+    "text": "If a free society cannot help the many who are poor, it cannot save the few who are rich.",
+    "startSeconds": 297.78,
+    "endSeconds": 313.3
+  },
+  {
+    "id": "line-020",
+    "sequence": 19,
+    "text": "To our sister republics south of our border, we offer a special pledge--to convert our good words into good deeds--in a new alliance for progress--to assist free men and free governments in casting off the chains of poverty.",
+    "startSeconds": 313.3,
+    "endSeconds": 336.79
+  },
+  {
+    "id": "line-021",
+    "sequence": 20,
+    "text": "But this peaceful revolution of hope cannot become the prey of hostile powers.",
+    "startSeconds": 336.79,
+    "endSeconds": 345.1
+  },
+  {
+    "id": "line-022",
+    "sequence": 21,
+    "text": "Let all our neighbors know that we shall join with them to oppose aggression or subversion anywhere in the Americas.",
+    "startSeconds": 345.1,
+    "endSeconds": 356.86
+  },
+  {
+    "id": "line-023",
+    "sequence": 22,
+    "text": "And let every other power know that this Hemisphere intends to remain the master of its own house.",
+    "startSeconds": 356.86,
+    "endSeconds": 370.979
+  },
+  {
+    "id": "line-024",
+    "sequence": 23,
+    "text": "To that world assembly of sovereign states, the United Nations, our last best hope in an age where the instruments of war have far outpaced the instruments of peace, we renew our pledge of support--to prevent it from becoming merely a forum for invective--to strengthen its shield of the new and the weak--and to enlarge the area in which its writ may run.",
+    "startSeconds": 370.979,
+    "endSeconds": 404.03
+  },
+  {
+    "id": "line-025",
+    "sequence": 24,
+    "text": "Finally, to those nations who would make themselves our adversary, we offer not a pledge but a request: that both sides begin anew the quest for peace, before the dark powers of destruction unleashed by science engulf all humanity in planned or accidental self-destruction.",
+    "startSeconds": 404.03,
+    "endSeconds": 435.15
+  },
+  {
+    "id": "line-026",
+    "sequence": 25,
+    "text": "We dare not tempt them with weakness.",
+    "startSeconds": 435.15,
+    "endSeconds": 437.6
+  },
+  {
+    "id": "line-027",
+    "sequence": 26,
+    "text": "For only when our arms are sufficient beyond doubt can we be certain beyond doubt that they will never be employed.",
+    "startSeconds": 437.6,
+    "endSeconds": 448.449
+  },
+  {
+    "id": "line-028",
+    "sequence": 27,
+    "text": "But neither can two great and powerful groups of nations take comfort from our present course--both sides overburdened by the cost of modern weapons, both rightly alarmed by the steady spread of the deadly atom, yet both racing to alter that uncertain balance of terror that stays the hand of mankind's final war.",
+    "startSeconds": 448.449,
+    "endSeconds": 479.46
+  },
+  {
+    "id": "line-029",
+    "sequence": 28,
+    "text": "So let us begin anew--remembering on both sides that civility is not a sign of weakness, and sincerity is always subject to proof.",
+    "startSeconds": 479.46,
+    "endSeconds": 492.97
+  },
+  {
+    "id": "line-030",
+    "sequence": 29,
+    "text": "Let us never negotiate out of fear.",
+    "startSeconds": 492.97,
+    "endSeconds": 496.51
+  },
+  {
+    "id": "line-031",
+    "sequence": 30,
+    "text": "But let us never fear to negotiate.",
+    "startSeconds": 496.51,
+    "endSeconds": 506.19
+  },
+  {
+    "id": "line-032",
+    "sequence": 31,
+    "text": "Let both sides explore what problems unite us instead of belaboring those problems which divide us.",
+    "startSeconds": 506.19,
+    "endSeconds": 515.14
+  },
+  {
+    "id": "line-033",
+    "sequence": 32,
+    "text": "Let both sides, for the first time, formulate serious and precise proposals for the inspection and control of arms--and bring the absolute power to destroy other nations under the absolute control of all nations.",
+    "startSeconds": 515.14,
+    "endSeconds": 539.21
+  },
+  {
+    "id": "line-034",
+    "sequence": 33,
+    "text": "Let both sides seek to invoke the wonders of science instead of its terrors.",
+    "startSeconds": 539.21,
+    "endSeconds": 547.58
+  },
+  {
+    "id": "line-035",
+    "sequence": 34,
+    "text": "Together let us explore the stars, conquer the deserts, eradicate disease, tap the ocean depths, and encourage the arts and commerce.",
+    "startSeconds": 547.58,
+    "endSeconds": 560.57
+  },
+  {
+    "id": "line-036",
+    "sequence": 35,
+    "text": "Let both sides unite to heed in all corners of the earth the command of Isaiah--to undo the heavy burdens ...",
+    "startSeconds": 560.57,
+    "endSeconds": 570.863
+  },
+  {
+    "id": "line-037",
+    "sequence": 36,
+    "text": "and to let the oppressed go free.",
+    "startSeconds": 570.863,
+    "endSeconds": 575.19
+  },
+  {
+    "id": "line-038",
+    "sequence": 37,
+    "text": "And if a beachhead of cooperation may push back the jungle of suspicion, let both sides join in creating a new endeavor, not a new balance of power, but a new world of law, where the strong are just and the weak secure and the peace preserved.",
+    "startSeconds": 575.19,
+    "endSeconds": 599.86
+  },
+  {
+    "id": "line-039",
+    "sequence": 38,
+    "text": "All this will not be finished in the first 100 days.",
+    "startSeconds": 599.86,
+    "endSeconds": 606.57
+  },
+  {
+    "id": "line-040",
+    "sequence": 39,
+    "text": "Nor will it be finished in the first 1,000 days, nor in the life of this Administration, nor even perhaps in our lifetime on this planet.",
+    "startSeconds": 606.57,
+    "endSeconds": 619.06
+  },
+  {
+    "id": "line-041",
+    "sequence": 40,
+    "text": "But let us begin.",
+    "startSeconds": 619.06,
+    "endSeconds": 628.48
+  },
+  {
+    "id": "line-042",
+    "sequence": 41,
+    "text": "In your hands, my fellow citizens, more than in mine, will rest the final success or failure of our course.",
+    "startSeconds": 628.48,
+    "endSeconds": 638.72
+  },
+  {
+    "id": "line-043",
+    "sequence": 42,
+    "text": "Since this country was founded, each generation of Americans has been summoned to give testimony to its national loyalty.",
+    "startSeconds": 638.72,
+    "endSeconds": 650.45
+  },
+  {
+    "id": "line-044",
+    "sequence": 43,
+    "text": "The graves of young Americans who answered the call to service surround the globe.",
+    "startSeconds": 650.45,
+    "endSeconds": 658.62
+  },
+  {
+    "id": "line-045",
+    "sequence": 44,
+    "text": "Now the trumpet summons us again--not as a call to bear arms, though arms we need; not as a call to battle, though embattled we are--but a call to bear the burden of a long twilight struggle, year in and year out, rejoicing in hope, patient in tribulation--a struggle against the common enemies of man: tyranny, poverty, disease, and war itself.",
+    "startSeconds": 658.62,
+    "endSeconds": 698.07
+  },
+  {
+    "id": "line-046",
+    "sequence": 45,
+    "text": "Can we forge against these enemies a grand and global alliance, North and South, East and West, that can assure a more fruitful life for all mankind?",
+    "startSeconds": 698.07,
+    "endSeconds": 714.37
+  },
+  {
+    "id": "line-047",
+    "sequence": 46,
+    "text": "Will you join in that historic effort?",
+    "startSeconds": 714.37,
+    "endSeconds": 725.24
+  },
+  {
+    "id": "line-048",
+    "sequence": 47,
+    "text": "In the long history of the world, only a few generations have been granted the role of defending freedom in its hour of maximum danger.",
+    "startSeconds": 725.24,
+    "endSeconds": 738.3
+  },
+  {
+    "id": "line-049",
+    "sequence": 48,
+    "text": "I do not shrink from this responsibility--I welcome it.",
+    "startSeconds": 738.3,
+    "endSeconds": 747.63
+  },
+  {
+    "id": "line-050",
+    "sequence": 49,
+    "text": "I do not believe that any of us would exchange places with any other people or any other generation.",
+    "startSeconds": 747.63,
+    "endSeconds": 757.61
+  },
+  {
+    "id": "line-051",
+    "sequence": 50,
+    "text": "The energy, the faith, the devotion which we bring to this endeavor will light our country and all who serve it--and the glow from that fire can truly light the world.",
+    "startSeconds": 757.61,
+    "endSeconds": 774.81
+  },
+  {
+    "id": "line-052",
+    "sequence": 51,
+    "text": "And so, my fellow Americans: ask not what your country can do for you--ask what you can do for your country.",
+    "startSeconds": 774.81,
+    "endSeconds": 792.13
+  },
+  {
+    "id": "line-053",
+    "sequence": 52,
+    "text": "My fellow citizens of the world: ask not what America will do for you, but what together we can do for the freedom of man.",
+    "startSeconds": 792.13,
+    "endSeconds": 805.04
+  },
+  {
+    "id": "line-054",
+    "sequence": 53,
+    "text": "Finally, whether you are citizens of America or citizens of the world, ask of us the same high standards of strength and sacrifice which we ask of you.",
+    "startSeconds": 805.04,
+    "endSeconds": 827.26
+  },
+  {
+    "id": "line-055",
+    "sequence": 54,
+    "text": "With a good conscience our only sure reward, with history the final judge of our deeds, let us go forth to lead the land we love, asking His blessing and His help, but knowing that here on earth God's work must truly be our own.",
+    "startSeconds": 827.26,
+    "endSeconds": 854.81
+  }
+]

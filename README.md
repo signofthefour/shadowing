@@ -1,6 +1,6 @@
 # Speak Along
 
-A private, sentence-by-sentence English shadowing app built around Steve Jobs' 2005 Stanford commencement address.
+A private, sentence-by-sentence English shadowing app with a small library of prepared speeches to practice with.
 
 The app streams the speech through YouTube, highlights the active transcript line, records one learner take per sentence, and stores progress locally in the browser. Recordings are never uploaded.
 
@@ -37,11 +37,11 @@ Open the `/shadowing/` URL printed by Vite. In the repository's **Settings → P
 
 ## Practice flow
 
-1. Select **Hear Steve** to play the active sentence.
+1. Choose a speech from the library, then select **Hear this line** to play the active sentence.
 2. After playback stops, select **Record** and speak the sentence.
 3. Select **Stop**, then use **Listen**, **Redo**, or **Next**. You can also use **Next** without recording when you only want to continue listening.
 4. Refreshing the page restores saved progress and successful takes.
-5. After recording all 144 sentences, download the combined recording as an MP3 or discard the session. Skipped lines remain available in the transcript.
+5. After recording every line of the active speech, download the combined recording as an MP3 or discard the session. Skipped lines remain available in the transcript.
 
 **Quit & Erase** permanently removes this app's locally saved progress and recordings after confirmation.
 
@@ -88,10 +88,12 @@ While the development server is running, it is available at `/video/stanford-spe
 ## Project structure
 
 ```text
-src/app/                 Main practice interface and flow
-src/data/                Prepared transcript and sentence timings
+src/app/                 Library/Practice shell (top-level App component)
+src/data/speeches/       Speech catalog: prepared transcripts and sentence timings
 src/domain/              Practice state machine and domain types
+src/features/library/    Speech-selection screen
 src/features/player/     YouTube IFrame API adapter
+src/features/practice/   Practice flow for one selected speech
 src/features/recorder/   Browser microphone recorder
 src/features/session/    IndexedDB persistence
 src/features/export/     MP3 assembly and encoding
@@ -100,7 +102,7 @@ e2e/                     Desktop and mobile browser tests
 
 ## Scope
 
-This project supports one prepared speech. Pronunciation scoring, speech recognition, user accounts, arbitrary videos, and cloud synchronization are intentionally out of scope.
+This project supports a small, developer-curated catalog of prepared speeches (see `src/data/speeches/`), not arbitrary user-supplied videos. Adding a new speech means preparing its transcript timing data and registering it in the catalog — there is no in-app "add a video" flow. Pronunciation scoring, speech recognition, user accounts, and cloud synchronization are intentionally out of scope.
 
 ## License
 

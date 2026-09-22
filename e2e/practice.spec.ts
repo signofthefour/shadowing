@@ -1,5 +1,5 @@
 import { expect, test } from '@playwright/test'
-import transcriptLines from '../src/data/stanfordSpeech.generated.json' with { type: 'json' }
+import transcriptLines from '../src/data/speeches/stanfordSpeech.generated.json' with { type: 'json' }
 
 const SPEECH_ID = 'steve-jobs-stanford-2005'
 
@@ -128,7 +128,7 @@ async function installPracticeFakes(page: import('@playwright/test').Page) {
 }
 
 async function finishSourceAndRecord(page: import('@playwright/test').Page) {
-  await page.getByRole('button', { name: 'Hear Steve' }).click()
+  await page.getByRole('button', { name: 'Hear this line' }).click()
   await expect(page.getByRole('button', { name: 'Record' })).toBeEnabled()
   await page.getByRole('button', { name: 'Record' }).click()
   await page.getByRole('button', { name: 'Stop', exact: true }).click()
@@ -189,12 +189,17 @@ async function storedTakeBody(page: import('@playwright/test').Page, lineId: str
   }, { speechId: SPEECH_ID, lineId })
 }
 
+async function openStanfordSpeech(page: import('@playwright/test').Page) {
+  await page.getByRole('button', { name: /Stanford Commencement/ }).click()
+}
+
 test.beforeEach(async ({ page }) => {
   await installPracticeFakes(page)
 })
 
 test('shows the Stanford practice screen and erases only after confirmation', async ({ page }) => {
   await page.goto('/')
+  await openStanfordSpeech(page)
   await expect(page.getByText('Line 1 of 144')).toBeVisible()
   await expect(page.getByRole('button', { name: 'Quit & Erase' })).toBeVisible()
 
@@ -209,6 +214,7 @@ test('shows the Stanford practice screen and erases only after confirmation', as
 
 test('advances without recording and restores the skipped position', async ({ page }) => {
   await page.goto('/')
+  await openStanfordSpeech(page)
 
   const next = page.getByRole('button', { name: 'Next', exact: true })
   await expect(next).toBeEnabled()
@@ -223,6 +229,7 @@ test('advances without recording and restores the skipped position', async ({ pa
 
 test('restores the recorded take and next line after refresh', async ({ page }) => {
   await page.goto('/')
+  await openStanfordSpeech(page)
 
   await finishSourceAndRecord(page)
 
@@ -242,8 +249,9 @@ test('restores the recorded take and next line after refresh', async ({ page }) 
 test('explains microphone denial and keeps the current line', async ({ page }) => {
   await page.addInitScript(() => localStorage.setItem('e2e-microphone-denied', 'true'))
   await page.goto('/')
+  await openStanfordSpeech(page)
 
-  await page.getByRole('button', { name: 'Hear Steve' }).click()
+  await page.getByRole('button', { name: 'Hear this line' }).click()
   await expect(page.getByRole('button', { name: 'Record' })).toBeEnabled()
   await page.getByRole('button', { name: 'Record' }).click()
 
@@ -255,6 +263,7 @@ test('explains microphone denial and keeps the current line', async ({ page }) =
 
 test('preserves the previous take when a replacement cannot be stored', async ({ page }) => {
   await page.goto('/')
+  await openStanfordSpeech(page)
   await finishSourceAndRecord(page)
   await page.evaluate(() => {
     localStorage.setItem('e2e-video-playback-fails', 'true')
@@ -264,7 +273,7 @@ test('preserves the previous take when a replacement cannot be stored', async ({
     }
   })
 
-  await page.getByRole('button', { name: 'Hear Steve' }).click()
+  await page.getByRole('button', { name: 'Hear this line' }).click()
   await expect(page.getByRole('button', { name: 'Retry video' })).toBeVisible()
   await page.getByRole('button', { name: 'Record' }).click()
   await page.getByRole('button', { name: 'Stop', exact: true }).click()
@@ -279,18 +288,20 @@ test('preserves the previous take when a replacement cannot be stored', async ({
 test('recovers from an initial video failure when retried', async ({ page }) => {
   await page.addInitScript(() => localStorage.setItem('e2e-video-failures', '1'))
   await page.goto('/')
+  await openStanfordSpeech(page)
 
   await expect(page.getByRole('alert')).toContainText('The video could not be played')
   await page.getByRole('button', { name: 'Retry video' }).click()
 
   await expect(page.getByRole('alert')).toBeHidden()
-  await expect(page.getByRole('button', { name: 'Hear Steve' })).toBeEnabled()
-  await page.getByRole('button', { name: 'Hear Steve' }).click()
+  await expect(page.getByRole('button', { name: 'Hear this line' })).toBeEnabled()
+  await page.getByRole('button', { name: 'Hear this line' }).click()
   await expect(page.getByRole('button', { name: 'Record' })).toBeEnabled()
 })
 
 test('downloads a completed session as MP3', async ({ page }) => {
   await page.goto('/')
+  await openStanfordSpeech(page)
   await seedCompletedSession(page)
   await page.reload()
   await page.getByRole('button', { name: 'Next', exact: true }).click()
@@ -299,7 +310,7 @@ test('downloads a completed session as MP3', async ({ page }) => {
   await page.getByRole('button', { name: 'Download MP3' }).click()
   const download = await downloadPromise
 
-  expect(download.suggestedFilename()).toBe('steve-jobs-shadowing-session.mp3')
+  expect(download.suggestedFilename()).toBe('steve-jobs-stanford-2005-shadowing-session.mp3')
   let downloadedBytes = 0
   for await (const chunk of await download.createReadStream()) downloadedBytes += chunk.length
   expect(downloadedBytes).toBeGreaterThan(0)
@@ -312,6 +323,7 @@ test('preserves a completed session when MP3 creation fails', async ({ page }) =
     }
   })
   await page.goto('/')
+  await openStanfordSpeech(page)
   await seedCompletedSession(page)
   await page.reload()
   await page.getByRole('button', { name: 'Next', exact: true }).click()
@@ -327,5 +339,5 @@ test('preserves a completed session when MP3 creation fails', async ({ page }) =
   await page.getByRole('button', { name: 'Next', exact: true }).click()
   const downloadPromise = page.waitForEvent('download')
   await page.getByRole('button', { name: 'Download MP3' }).click()
-  expect((await downloadPromise).suggestedFilename()).toBe('steve-jobs-shadowing-session.mp3')
+  expect((await downloadPromise).suggestedFilename()).toBe('steve-jobs-stanford-2005-shadowing-session.mp3')
 })

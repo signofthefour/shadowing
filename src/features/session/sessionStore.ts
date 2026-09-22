@@ -20,6 +20,10 @@ export type SessionStore = {
     session: PracticeSession | null
     takes: StoredTake[]
   }>
+  getProgress(speechId: PracticeSession['speechId']): Promise<{
+    completedCount: number
+    activeLineId: string | null
+  }>
   saveProgress(session: PracticeSession): Promise<void>
   replaceTake(speechId: PracticeSession['speechId'], take: StoredTake): Promise<void>
   discard(speechId: PracticeSession['speechId']): Promise<void>
@@ -40,6 +44,19 @@ export function createSessionStore(): SessionStore {
             .map(({ speechId: _speechId, key: _key, ...take }) => take as StoredTake)
             .sort((a, b) => a.lineId.localeCompare(b.lineId)),
         }
+      } finally {
+        database.close()
+      }
+    },
+
+    async getProgress(speechId) {
+      const database = await openSessionDatabase()
+      try {
+        const transaction = database.transaction(['session', 'takes'], 'readonly')
+        const session = (await transaction.objectStore('session').get(speechId)) ?? null
+        const completedCount = await transaction.objectStore('takes').index('by-speech').count(speechId)
+        await transaction.done
+        return { completedCount, activeLineId: session?.activeLineId ?? null }
       } finally {
         database.close()
       }
