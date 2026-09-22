@@ -22,6 +22,7 @@ type SpeechSpec = {
   extractText: (rawText: string) => string
   minimumSentences: number
   startSeconds: number
+  captionWindow?: { fromMs: number; toMs: number }
 }
 
 const speeches: SpeechSpec[] = [
@@ -51,6 +52,7 @@ const speeches: SpeechSpec[] = [
     extractText: extractStanfordText,
     minimumSentences: 100,
     startSeconds: 26.08,
+    captionWindow: { fromMs: 26_080, toMs: 873_000 },
   },
 ]
 
@@ -62,6 +64,7 @@ for (const speech of speeches) {
     speechText,
     minimumSentences: speech.minimumSentences,
     startSeconds: speech.startSeconds,
+    captionWindow: speech.captionWindow,
   })
   await writeFile(speech.outputUrl, `${JSON.stringify(lines, null, 2)}\n`)
   console.log(`${speech.name}: aligned ${lines.length} sentences; edit distance ${editDistance}.`)

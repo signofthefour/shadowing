@@ -13,6 +13,7 @@ export type AlignTranscriptOptions = {
   speechText: string
   minimumSentences?: number
   startSeconds?: number
+  captionWindow?: { fromMs: number; toMs: number }
 }
 
 export type AlignTranscriptResult = {
@@ -25,10 +26,11 @@ export async function alignTranscript({
   speechText,
   minimumSentences = 20,
   startSeconds = 0,
+  captionWindow,
 }: AlignTranscriptOptions): Promise<AlignTranscriptResult> {
   const sentences = speechText
     .replace(/\s+/g, ' ')
-    .match(/[^.!?]+[.!?]+(?:[""])?/g)
+    .match(/[^.!?]+[.!?]+(?:[”"])?/g)
     ?.map((sentence) => sentence.trim())
     .filter(Boolean)
 
@@ -37,7 +39,10 @@ export async function alignTranscript({
   }
 
   const captions = await YoutubeTranscript.fetchTranscript(videoId, { lang: 'en' })
-  const speechCaptions = captions.filter((row) => !/^\[/.test(row.text))
+  const speechCaptions = captions.filter((row) => {
+    if (captionWindow && (row.offset < captionWindow.fromMs || row.offset > captionWindow.toMs)) return false
+    return !/^\[/.test(row.text)
+  })
   if (speechCaptions.length === 0) throw new Error(`No usable captions for ${videoId}`)
 
   const normalize = (word: string) => word.toLowerCase().replace(/[^a-z0-9]/g, '')
