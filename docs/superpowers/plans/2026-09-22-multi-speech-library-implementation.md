@@ -2031,6 +2031,10 @@ to:
   expect((await downloadPromise).suggestedFilename()).toBe('steve-jobs-stanford-2005-shadowing-session.mp3')
 ```
 
+- [ ] **Step 3b: Update the renamed source-audio button label**
+
+Task 7 renamed the source-audio button from `"▶ Hear Steve"` to `"▶ Hear this line"` in `Practice.tsx`, but this e2e file was never updated to match (a plan gap — Task 7's file list didn't include this file, and this task's original Step list didn't call it out). Replace every occurrence of the literal string `'Hear Steve'` with `'Hear this line'` in `e2e/practice.spec.ts` (5 call sites: `getByRole('button', { name: 'Hear Steve' })` in `finishSourceAndRecord`, and in the tests `'explains microphone denial and keeps the current line'`, `'preserves the previous take when a replacement cannot be stored'` (two occurrences), and `'recovers from an initial video failure when retried'` (two occurrences, including the disabled/enabled check)).
+
 - [ ] **Step 4: Run the e2e suite**
 
 Run: `npm run test:e2e`
