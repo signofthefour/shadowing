@@ -1964,19 +1964,9 @@ git commit -m "Rewire App as a Library/Practice shell with last-speech memory"
 
 Every existing scenario in this file starts with `await page.goto('/')` and immediately expects to already be inside the Stanford practice screen (`Line 1 of 144`). With the library screen in front of it, each scenario needs one extra step: pick the Stanford card. Because the chosen speech is now remembered in `localStorage` for the rest of that test (including across `page.reload()`), no other change is needed — the remaining assertions in every scenario are unchanged.
 
-- [ ] **Step 1: Add a helper and update the JSON import path**
+- [ ] **Step 1: Add a helper for selecting the Stanford speech**
 
-At the top of `e2e/practice.spec.ts`, change:
-
-```ts
-import transcriptLines from '../src/data/stanfordSpeech.generated.json' with { type: 'json' }
-```
-
-to:
-
-```ts
-import transcriptLines from '../src/data/speeches/stanfordSpeech.generated.json' with { type: 'json' }
-```
+Task 2 already updated this file's transcript JSON import to `'../src/data/speeches/stanfordSpeech.generated.json'` — confirm that import is already in place (no change needed here).
 
 Add this helper directly above `test.beforeEach`:
 
