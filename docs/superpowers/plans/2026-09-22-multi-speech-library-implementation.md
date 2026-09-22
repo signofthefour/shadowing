@@ -358,6 +358,7 @@ export type AlignTranscriptOptions = {
   speechText: string
   minimumSentences?: number
   startSeconds?: number
+  captionWindow?: { fromMs: number; toMs: number }
 }
 
 export type AlignTranscriptResult = {
@@ -370,6 +371,7 @@ export async function alignTranscript({
   speechText,
   minimumSentences = 20,
   startSeconds = 0,
+  captionWindow,
 }: AlignTranscriptOptions): Promise<AlignTranscriptResult> {
   const sentences = speechText
     .replace(/\s+/g, ' ')
@@ -382,7 +384,10 @@ export async function alignTranscript({
   }
 
   const captions = await YoutubeTranscript.fetchTranscript(videoId, { lang: 'en' })
-  const speechCaptions = captions.filter((row) => !/^\[/.test(row.text))
+  const speechCaptions = captions.filter((row) => {
+    if (captionWindow && (row.offset < captionWindow.fromMs || row.offset > captionWindow.toMs)) return false
+    return !/^\[/.test(row.text)
+  })
   if (speechCaptions.length === 0) throw new Error(`No usable captions for ${videoId}`)
 
   const normalize = (word: string) => word.toLowerCase().replace(/[^a-z0-9]/g, '')
@@ -491,6 +496,7 @@ type SpeechSpec = {
   extractText: (rawText: string) => string
   minimumSentences: number
   startSeconds: number
+  captionWindow?: { fromMs: number; toMs: number }
 }
 
 const speeches: SpeechSpec[] = [
@@ -520,6 +526,7 @@ const speeches: SpeechSpec[] = [
     extractText: extractStanfordText,
     minimumSentences: 100,
     startSeconds: 26.08,
+    captionWindow: { fromMs: 26_080, toMs: 873_000 },
   },
 ]
 
@@ -531,6 +538,7 @@ for (const speech of speeches) {
     speechText,
     minimumSentences: speech.minimumSentences,
     startSeconds: speech.startSeconds,
+    captionWindow: speech.captionWindow,
   })
   await writeFile(speech.outputUrl, `${JSON.stringify(lines, null, 2)}\n`)
   console.log(`${speech.name}: aligned ${lines.length} sentences; edit distance ${editDistance}.`)
@@ -541,7 +549,7 @@ The Stanford entry is listed last so a missing `/tmp/stanford-speech.txt` (expec
 
 - [ ] **Step 3: Verify by inspection that the Stanford branch is unchanged**
 
-Read through `extractStanfordText` and the `speeches` entry for Stanford above and confirm they reproduce, verbatim, the extraction logic and the `26.08` / `873`-adjacent constants from the pre-refactor script. Do not attempt to execute this branch — `/tmp/stanford-speech.txt` does not exist in this environment (confirmed: `ls /tmp/stanford-speech.txt` fails), and this matches the already-documented state of the repo (see `STATUS.md`, "the generated JSON is already checked in and the website does not run this script").
+Read through `extractStanfordText` and the `speeches` entry for Stanford above and confirm they reproduce, verbatim, the extraction logic and the `26.08`/`26_080`/`873_000` constants from the pre-refactor script — including the caption offset window. The pre-refactor script filtered captions with `captions.filter((row) => row.offset >= 26_080 && row.offset <= 873_000 && !/^\[/.test(row.text))`; the generalized `alignTranscript` must reproduce this exactly for Stanford via its `captionWindow` option (`{ fromMs: 26_080, toMs: 873_000 }`), while leaving JFK and Eisenhower unaffected (they pass no `captionWindow`, so only the bracket-caption filter applies to them — correct, since neither of their source videos needs trimming). Do not attempt to execute the Stanford branch — `/tmp/stanford-speech.txt` does not exist in this environment (confirmed: `ls /tmp/stanford-speech.txt` fails), and this matches the already-documented state of the repo (see `STATUS.md`, "the generated JSON is already checked in and the website does not run this script").
 
 - [ ] **Step 4: Commit**
 
