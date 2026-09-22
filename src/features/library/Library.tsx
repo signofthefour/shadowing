@@ -9,7 +9,7 @@ type LibraryProps = {
   onSelect: (speechId: string) => void
 }
 
-type ProgressEntry = { completedCount: number }
+type ProgressEntry = Awaited<ReturnType<SessionStore['getProgress']>>
 
 export function Library({ speeches, store, onSelect }: LibraryProps) {
   const [progress, setProgress] = useState<Map<string, ProgressEntry>>(new Map())
@@ -21,6 +21,8 @@ export function Library({ speeches, store, onSelect }: LibraryProps) {
     ).then((entries) => {
       if (!current) return
       setProgress(new Map(entries))
+    }).catch(() => {
+      // Progress is a convenience display; leave cards showing "Not started" if it can't be loaded.
     })
     return () => {
       current = false

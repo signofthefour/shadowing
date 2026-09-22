@@ -41,7 +41,7 @@ Open the `/shadowing/` URL printed by Vite. In the repository's **Settings → P
 2. After playback stops, select **Record** and speak the sentence.
 3. Select **Stop**, then use **Listen**, **Redo**, or **Next**. You can also use **Next** without recording when you only want to continue listening.
 4. Refreshing the page restores saved progress and successful takes.
-5. After recording all 144 sentences, download the combined recording as an MP3 or discard the session. Skipped lines remain available in the transcript.
+5. After recording every line of the active speech, download the combined recording as an MP3 or discard the session. Skipped lines remain available in the transcript.
 
 **Quit & Erase** permanently removes this app's locally saved progress and recordings after confirmation.
 
@@ -88,7 +88,7 @@ While the development server is running, it is available at `/video/stanford-spe
 ## Project structure
 
 ```text
-src/app/                 Main practice interface and flow
+src/app/                 Library/Practice shell (top-level App component)
 src/data/speeches/       Speech catalog: prepared transcripts and sentence timings
 src/domain/              Practice state machine and domain types
 src/features/library/    Speech-selection screen
