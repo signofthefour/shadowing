@@ -56,3 +56,10 @@ button:focus-visible, a:focus-visible { outline: 3px solid #d97732; outline-offs
 @media (prefers-reduced-motion: reduce) {
   *, *::before, *::after { scroll-behavior: auto !important; }
 }
+
+.library-shell { min-height: 100vh; padding: 0 4vw 2rem; }
+.library-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); gap: 1.5rem; max-width: 1400px; margin: 2rem auto; }
+.speech-card { display: flex; flex-direction: column; gap: .5rem; border: 1px solid #d8d0c1; border-radius: 18px; background: #faf8f2; padding: 1rem; cursor: pointer; text-align: left; }
+.speech-thumbnail { width: 100%; border-radius: 12px; aspect-ratio: 16/9; object-fit: cover; }
+.speech-title { font-family: Georgia, serif; font-size: 1.1rem; font-weight: 700; }
+.speech-progress { color: #706a60; font-size: .85rem; }
